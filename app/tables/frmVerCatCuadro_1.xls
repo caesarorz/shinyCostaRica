@@ -1,0 +1,1739 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns="http://www.w3.org/TR/REC-html40"> 
+	<head> 
+		<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"> 
+		<meta name="ProgId" content="Excel.Sheet"> 
+		<meta name="Generator" content="Microsoft Excel 10"> 
+		<link rel="File-List" href="Libro1_archivos/filelist.xml"> 
+			<link rel="Edit-Time-Data" href="Libro1_archivos/editdata.mso"> 
+				<link rel="OLE-Object-Data" href="Libro1_archivos/oledata.mso"> 
+					<!--[If gte mso 9]><xml> 
+ <o:DocumentProperties> 
+  <o:Author></o:Author> 
+  <o:LastAuthor></o:LastAuthor> 
+  <o:Created>2021-10-15T00:00:00Z</o:Created> 
+  <o:LastSaved>2021-10-15T00:00:00Z</o:LastSaved> 
+  <o:Company>BCCR</o:Company> 
+  <o:Version>10.4219</o:Version> 
+ </o:DocumentProperties> 
+ <o:OfficeDocumentSettings> 
+  <o:DownloadComponents/> 
+ </o:OfficeDocumentSettings> 
+</xml><![endif]--> 
+					<style> 
+						<!--table 
+	{mso-displayed-decimal-separator:"\,"; 
+	mso-displayed-thousand-separator:"\.";} 
+@page 
+	{margin:.98in .79in .98in .79in; 
+	mso-header-margin:0in; 
+	mso-footer-margin:0in;} 
+            tr 
+	{mso-height-source:auto;} 
+            col 
+	{mso-width-source:auto;} 
+            br 
+	{mso-data-placement:same-cell;} 
+            .style0 
+	{mso-number-format:General; 
+	text-align:general; 
+	vertical-align:bottom; 
+	white-space:nowrap; 
+	mso-rotate:0; 
+	mso-background-source:auto; 
+	mso-pattern:auto; 
+	color:windowtext; 
+	font-size:10.0pt; 
+	font-weight:400; 
+	font-style:normal; 
+	text-decoration:none; 
+	font-family:Arial; 
+	mso-generic-font-family:auto; 
+	mso-font-charset:0; 
+	border:none; 
+	mso-protection:locked visible; 
+	mso-style-name:Normal; 
+	mso-style-id:0;} 
+            td 
+	{mso-style-parent:style0; 
+	padding-top:1px; 
+	padding-right:1px; 
+	padding-left:1px; 
+	mso-ignore:padding; 
+	color:windowtext; 
+	font-size:10.0pt; 
+	font-weight:400; 
+	font-style:normal; 
+	text-decoration:none; 
+	font-family:Arial; 
+	mso-generic-font-family:auto; 
+	mso-font-charset:0; 
+	mso-number-format:General; 
+	text-align:general; 
+	vertical-align:bottom; 
+	border:none; 
+	mso-background-source:auto; 
+	mso-pattern:auto; 
+	mso-protection:locked visible; 
+	white-space:nowrap; 
+	mso-rotate:0;} 
+	.numero 
+	{mso-style-parent:style0; 
+	mso-number-format:"\#\,\#\#0\.0";} 
+	.texto 
+	{mso-style-parent:style0; 
+	mso-number-format:"\@";} 
+--></style> 
+		<!--[If gte mso 9]><xml> 
+ <x:ExcelWorkbook> 
+  <x:ExcelWorksheets> 
+   <x:ExcelWorksheet> 
+    <x:Name>Hoja1</x:Name> 
+    <x:WorksheetOptions> 
+     <x:Selected/> 
+     <x:ProtectContents>False</x:ProtectContents> 
+     <x:ProtectObjects>False</x:ProtectObjects> 
+     <x:ProtectScenarios>False</x:ProtectScenarios> 
+    </x:WorksheetOptions> 
+    <x:QueryTable> 
+     <x:RefreshOnFileOpen/> 
+     <x:Name>DataExported</x:Name> 
+     <x:AutoFormatFont/> 
+     <x:AutoFormatPattern/> 
+     <x:QuerySource> 
+      <x:QueryType>Web</x:QueryType> 
+      <x:EnableRedirections/> 
+      <x:RefreshedInXl9/> 
+      <x:EntirePage/> 
+      <x:URLString 
+       HRef='https://gee.bccr.fi.cr/indicadoreseconomicos/Cuadros/frmVerCatCuadro.aspx?CodCuadro=5782&Idioma=1&FecInicial=1991/12/31&FecFinal=2022/12/31&Exportar=True&Excel=True'/> 
+      <x:VersionLastEdit>1</x:VersionLastEdit> 
+      <x:VersionLastRefresh>1</x:VersionLastRefresh> 
+     </x:QuerySource> 
+    </x:QueryTable> 
+   </x:ExcelWorksheet> 
+   <x:ExcelWorksheet> 
+    <x:Name>Hoja2</x:Name> 
+    <x:WorksheetOptions> 
+     <x:ProtectContents>False</x:ProtectContents> 
+     <x:ProtectObjects>False</x:ProtectObjects> 
+     <x:ProtectScenarios>False</x:ProtectScenarios> 
+    </x:WorksheetOptions> 
+   </x:ExcelWorksheet> 
+   <x:ExcelWorksheet> 
+    <x:Name>Hoja3</x:Name> 
+    <x:WorksheetOptions> 
+     <x:ProtectContents>False</x:ProtectContents> 
+     <x:ProtectObjects>False</x:ProtectObjects> 
+     <x:ProtectScenarios>False</x:ProtectScenarios> 
+    </x:WorksheetOptions> 
+   </x:ExcelWorksheet> 
+  </x:ExcelWorksheets> 
+  <x:ProtectStructure>False</x:ProtectStructure> 
+  <x:ProtectWindows>False</x:ProtectWindows> 
+ </x:ExcelWorkbook> 
+ <x:ExcelName> 
+  <x:Name>DataExported</x:Name> 
+  <x:SheetIndex>1</x:SheetIndex> 
+  <x:Formula>=Hoja1!$A$1:$AG$54</x:Formula> 
+ </x:ExcelName> 
+</xml><![endif]--> 
+	</head> 
+	<body link="blue" vlink="purple"> 
+<form id="Form1" method="post" runat="server">
+    <table id="Table9" cellPadding="0" cellSpacing="0" border="0">
+        <TR><TD colSpan="10" class=texto><a name="DataExported">Producto Interno Bruto, Gasto de Consumo Final, Formaci&oacute;n Bruta de Capital, Exportaciones e Importaciones</a></TD></TR>
+        <TR><TD colSpan="10" class=texto>Millones de colones, composici&oacute;n porcentual y tasas de variaci&oacute;n</TD></TR>
+        <TR><TD colSpan="10" class=texto></TD></TR>
+        <TR><TD>&nbsp;</TD></TR>
+        <tr>
+            <td>&nbsp;</td>
+            <td class=texto align="center">1991</td>
+            <td class=texto align="center">1992</td>
+            <td class=texto align="center">1993</td>
+            <td class=texto align="center">1994</td>
+            <td class=texto align="center">1995</td>
+            <td class=texto align="center">1996</td>
+            <td class=texto align="center">1997</td>
+            <td class=texto align="center">1998</td>
+            <td class=texto align="center">1999</td>
+            <td class=texto align="center">2000</td>
+            <td class=texto align="center">2001</td>
+            <td class=texto align="center">2002</td>
+            <td class=texto align="center">2003</td>
+            <td class=texto align="center">2004</td>
+            <td class=texto align="center">2005</td>
+            <td class=texto align="center">2006</td>
+            <td class=texto align="center">2007</td>
+            <td class=texto align="center">2008</td>
+            <td class=texto align="center">2009</td>
+            <td class=texto align="center">2010</td>
+            <td class=texto align="center">2011</td>
+            <td class=texto align="center">2012</td>
+            <td class=texto align="center">2013</td>
+            <td class=texto align="center">2014</td>
+            <td class=texto align="center">2015</td>
+            <td class=texto align="center">2016</td>
+            <td class=texto align="center">2017</td>
+            <td class=texto align="center">2018</td>
+            <td class=texto align="center">2019</td>
+            <td class=texto align="center">2020</td>
+            <td class=texto align="center">2021</td>
+            <td class=texto align="center">2022</td>
+        </tr>
+        <tr>
+            <td class=texto>MILLONES DE COLONES</td>
+        </tr>
+        <tr>
+            <td class=texto>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Valor agregado a precios b&aacute;sicos (B1b)</td>
+            <td class=numero align=right>811544,13065498</td>
+            <td class=numero align=right>1050066,60874769</td>
+            <td class=numero align=right>1252733,32098794</td>
+            <td class=numero align=right>1511708,49621232</td>
+            <td class=numero align=right>1904817,93382348</td>
+            <td class=numero align=right>2208915,29628331</td>
+            <td class=numero align=right>2677100,03834180</td>
+            <td class=numero align=right>3221767,11223376</td>
+            <td class=numero align=right>3708075,46401944</td>
+            <td class=numero align=right>4191052,55055826</td>
+            <td class=numero align=right>4743750,18164921</td>
+            <td class=numero align=right>5395717,44691306</td>
+            <td class=numero align=right>6251567,94771791</td>
+            <td class=numero align=right>7401978,47007515</td>
+            <td class=numero align=right>8684770,78199305</td>
+            <td class=numero align=right>10490019,07757020</td>
+            <td class=numero align=right>12470286,31912170</td>
+            <td class=numero align=right>14580940,74743650</td>
+            <td class=numero align=right>16151214,73427300</td>
+            <td class=numero align=right>18161593,75409530</td>
+            <td class=numero align=right>19757809,84284630</td>
+            <td class=numero align=right>21762808,58688850</td>
+            <td class=numero align=right>23349213,83570940</td>
+            <td class=numero align=right>25733979,09591960</td>
+            <td class=numero align=right>27762675,44411990</td>
+            <td class=numero align=right>29498060,19706250</td>
+            <td class=numero align=right>31718871,59228300</td>
+            <td class=numero align=right>33390175,69771090</td>
+            <td class=numero align=right>34846681,22972840</td>
+            <td class=numero align=right>33603590,33823340</td>
+            <td class=numero align=right>35343200,66198330</td>
+            <td class=numero align=right>37355438,98260770</td>
+        </tr>
+        <tr>
+            <td class=texto>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Impuestos a los productos y las importaciones</td>
+            <td class=numero align=right>69495,95134597</td>
+            <td class=numero align=right>101851,26501038</td>
+            <td class=numero align=right>109679,06656122</td>
+            <td class=numero align=right>135416,18667621</td>
+            <td class=numero align=right>175044,95311493</td>
+            <td class=numero align=right>216810,25814113</td>
+            <td class=numero align=right>257056,47579431</td>
+            <td class=numero align=right>297686,67469600</td>
+            <td class=numero align=right>364254,73515299</td>
+            <td class=numero align=right>435997,97391556</td>
+            <td class=numero align=right>510334,27257548</td>
+            <td class=numero align=right>569673,81276278</td>
+            <td class=numero align=right>633992,09601946</td>
+            <td class=numero align=right>748159,33096862</td>
+            <td class=numero align=right>892251,44486737</td>
+            <td class=numero align=right>1123300,91323588</td>
+            <td class=numero align=right>1418766,59201458</td>
+            <td class=numero align=right>1628033,95107585</td>
+            <td class=numero align=right>1474933,01052302</td>
+            <td class=numero align=right>1640416,83861227</td>
+            <td class=numero align=right>1865714,71363455</td>
+            <td class=numero align=right>1990059,98240268</td>
+            <td class=numero align=right>2113740,80364337</td>
+            <td class=numero align=right>2267348,52455136</td>
+            <td class=numero align=right>2409243,41959851</td>
+            <td class=numero align=right>2558228,01498554</td>
+            <td class=numero align=right>2624775,90532225</td>
+            <td class=numero align=right>2624543,01029307</td>
+            <td class=numero align=right>2782969,87489897</td>
+            <td class=numero align=right>2570714,28011695</td>
+            <td class=numero align=right>2841134,89745393</td>
+            <td class=numero align=right>2975452,13257889</td>
+        </tr>
+        <tr>
+            <td class=texto>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Producto Interno Bruto a precios de mercado, nominal</td>
+            <td class=numero align=right>881040,08200095</td>
+            <td class=numero align=right>1151917,87375807</td>
+            <td class=numero align=right>1362412,38754916</td>
+            <td class=numero align=right>1647124,68288853</td>
+            <td class=numero align=right>2079862,88693841</td>
+            <td class=numero align=right>2425725,55442445</td>
+            <td class=numero align=right>2934156,51413610</td>
+            <td class=numero align=right>3519453,78692976</td>
+            <td class=numero align=right>4072330,19917243</td>
+            <td class=numero align=right>4627050,52447381</td>
+            <td class=numero align=right>5254084,45422469</td>
+            <td class=numero align=right>5965391,25967584</td>
+            <td class=numero align=right>6885560,04373738</td>
+            <td class=numero align=right>8150137,80104376</td>
+            <td class=numero align=right>9577022,22686042</td>
+            <td class=numero align=right>11613319,99080600</td>
+            <td class=numero align=right>13889052,91113630</td>
+            <td class=numero align=right>16208974,69851240</td>
+            <td class=numero align=right>17626147,74479600</td>
+            <td class=numero align=right>19802010,59270760</td>
+            <td class=numero align=right>21623524,55648080</td>
+            <td class=numero align=right>23752868,56929120</td>
+            <td class=numero align=right>25462954,63935270</td>
+            <td class=numero align=right>28001327,62047100</td>
+            <td class=numero align=right>30171918,86371840</td>
+            <td class=numero align=right>32056288,21204800</td>
+            <td class=numero align=right>34343647,49760520</td>
+            <td class=numero align=right>36014718,70800400</td>
+            <td class=numero align=right>37629651,10462740</td>
+            <td class=numero align=right>36174304,61835030</td>
+            <td class=numero align=right>38184335,55943730</td>
+            <td class=numero align=right>40330891,11518660</td>
+        </tr>
+        <tr>
+            <td class=texto>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DEMANDA INTERNA</td>
+            <td class=numero align=right>921809,88436048</td>
+            <td class=numero align=right>1215650,39108472</td>
+            <td class=numero align=right>1461567,24959436</td>
+            <td class=numero align=right>1749707,45427093</td>
+            <td class=numero align=right>2152989,73337762</td>
+            <td class=numero align=right>2523559,38307434</td>
+            <td class=numero align=right>3063114,49647505</td>
+            <td class=numero align=right>3664185,66272179</td>
+            <td class=numero align=right>4170997,96491434</td>
+            <td class=numero align=right>4657787,05735710</td>
+            <td class=numero align=right>5245447,45985938</td>
+            <td class=numero align=right>6082603,67695510</td>
+            <td class=numero align=right>7022188,95150435</td>
+            <td class=numero align=right>8218694,33725124</td>
+            <td class=numero align=right>9796682,64459179</td>
+            <td class=numero align=right>11983376,62017360</td>
+            <td class=numero align=right>14624106,15097810</td>
+            <td class=numero align=right>17633515,25636620</td>
+            <td class=numero align=right>17713345,65018770</td>
+            <td class=numero align=right>20168994,71849150</td>
+            <td class=numero align=right>22422341,82850780</td>
+            <td class=numero align=right>24642628,37123410</td>
+            <td class=numero align=right>26197080,10581900</td>
+            <td class=numero align=right>28691675,56792550</td>
+            <td class=numero align=right>30401903,17176630</td>
+            <td class=numero align=right>31946747,25139770</td>
+            <td class=numero align=right>34187929,08898470</td>
+            <td class=numero align=right>35823235,81877100</td>
+            <td class=numero align=right>36924971,06035110</td>
+            <td class=numero align=right>35561162,88122980</td>
+            <td class=numero align=right>37942413,70159810</td>
+            <td class=numero align=right>39322038,49177180</td>
+        </tr>
+        <tr>
+            <td class=texto>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gasto de consumo final (P3/P4)</td>
+            <td class=numero align=right>759682,04776107</td>
+            <td class=numero align=right>980273,02081523</td>
+            <td class=numero align=right>1175068,26190220</td>
+            <td class=numero align=right>1407587,20688468</td>
+            <td class=numero align=right>1746546,26363282</td>
+            <td class=numero align=right>2092981,45464456</td>
+            <td class=numero align=right>2474686,48222404</td>
+            <td class=numero align=right>2866614,80742240</td>
+            <td class=numero align=right>3312558,98247479</td>
+            <td class=numero align=right>3700603,44499031</td>
+            <td class=numero align=right>4188562,67305264</td>
+            <td class=numero align=right>4896306,91904387</td>
+            <td class=numero align=right>5716338,97487151</td>
+            <td class=numero align=right>6675875,64657539</td>
+            <td class=numero align=right>7980482,19303058</td>
+            <td class=numero align=right>9534633,59923698</td>
+            <td class=numero align=right>11389794,58518463</td>
+            <td class=numero align=right>13644366,62176354</td>
+            <td class=numero align=right>14460807,83636621</td>
+            <td class=numero align=right>16241480,07198319</td>
+            <td class=numero align=right>18087218,79012235</td>
+            <td class=numero align=right>19926687,40673235</td>
+            <td class=numero align=right>21208770,12114216</td>
+            <td class=numero align=right>23308937,43642810</td>
+            <td class=numero align=right>24713372,12680338</td>
+            <td class=numero align=right>25891653,89130926</td>
+            <td class=numero align=right>27983792,35824869</td>
+            <td class=numero align=right>29207382,20888751</td>
+            <td class=numero align=right>30637912,62361146</td>
+            <td class=numero align=right>29569037,60307423</td>
+            <td class=numero align=right>30719529,74444484</td>
+            <td class=numero align=right>31830345,23183007</td>
+        </tr>
+        <tr>
+            <td class=texto>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gasto de consumo final de los hogares e ISFLSH</td>
+            <td class=numero align=right>643447,16582824</td>
+            <td class=numero align=right>840775,43194008</td>
+            <td class=numero align=right>1001063,93224544</td>
+            <td class=numero align=right>1188554,57129266</td>
+            <td class=numero align=right>1477688,86622774</td>
+            <td class=numero align=right>1776110,68014598</td>
+            <td class=numero align=right>2104278,70912543</td>
+            <td class=numero align=right>2418579,78810762</td>
+            <td class=numero align=right>2771463,99255352</td>
+            <td class=numero align=right>3065409,99179615</td>
+            <td class=numero align=right>3437422,34696740</td>
+            <td class=numero align=right>4020046,76400958</td>
+            <td class=numero align=right>4718107,28734053</td>
+            <td class=numero align=right>5536779,19198068</td>
+            <td class=numero align=right>6686350,55770278</td>
+            <td class=numero align=right>8005735,25447474</td>
+            <td class=numero align=right>9611264,04487598</td>
+            <td class=numero align=right>11443597,17707480</td>
+            <td class=numero align=right>11685019,50721970</td>
+            <td class=numero align=right>12950245,18948240</td>
+            <td class=numero align=right>14419471,96985830</td>
+            <td class=numero align=right>15938569,44302170</td>
+            <td class=numero align=right>16846917,83073510</td>
+            <td class=numero align=right>18545546,68080130</td>
+            <td class=numero align=right>19596141,69737170</td>
+            <td class=numero align=right>20535471,56926030</td>
+            <td class=numero align=right>22365798,52019090</td>
+            <td class=numero align=right>23374534,20470430</td>
+            <td class=numero align=right>24298846,61768750</td>
+            <td class=numero align=right>23153093,32455520</td>
+            <td class=numero align=right>24279726,13488040</td>
+            <td class=numero align=right>25277758,13496980</td>
+        </tr>
+        <tr>
+            <td class=texto>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gasto de consumo final del Gobierno General</td>
+            <td class=numero align=right>116234,88193283</td>
+            <td class=numero align=right>139497,58887515</td>
+            <td class=numero align=right>174004,32965676</td>
+            <td class=numero align=right>219032,63559202</td>
+            <td class=numero align=right>268857,39740508</td>
+            <td class=numero align=right>316870,77449858</td>
+            <td class=numero align=right>370407,77309861</td>
+            <td class=numero align=right>448035,01931478</td>
+            <td class=numero align=right>541094,98992127</td>
+            <td class=numero align=right>635193,45319416</td>
+            <td class=numero align=right>751140,32608524</td>
+            <td class=numero align=right>876260,15503429</td>
+            <td class=numero align=right>998231,68753098</td>
+            <td class=numero align=right>1139096,45459471</td>
+            <td class=numero align=right>1294131,63532780</td>
+            <td class=numero align=right>1528898,34476224</td>
+            <td class=numero align=right>1778530,54030865</td>
+            <td class=numero align=right>2200769,44468874</td>
+            <td class=numero align=right>2775788,32914651</td>
+            <td class=numero align=right>3291234,88250079</td>
+            <td class=numero align=right>3667746,82026405</td>
+            <td class=numero align=right>3988117,96371065</td>
+            <td class=numero align=right>4361852,29040706</td>
+            <td class=numero align=right>4763390,75562680</td>
+            <td class=numero align=right>5117230,42943168</td>
+            <td class=numero align=right>5356182,32204896</td>
+            <td class=numero align=right>5617993,83805779</td>
+            <td class=numero align=right>5832848,00418321</td>
+            <td class=numero align=right>6339066,00592396</td>
+            <td class=numero align=right>6415944,27851903</td>
+            <td class=numero align=right>6439803,60956444</td>
+            <td class=numero align=right>6552587,09686027</td>
+        </tr>
+        <tr>
+            <td class=texto>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Formaci&oacute;n bruta de capital fijo (P51g)</td>
+            <td class=numero align=right>149821,71448446</td>
+            <td class=numero align=right>223141,56257530</td>
+            <td class=numero align=right>277835,28899776</td>
+            <td class=numero align=right>329196,63480140</td>
+            <td class=numero align=right>411636,41410309</td>
+            <td class=numero align=right>435473,99843759</td>
+            <td class=numero align=right>565401,37693025</td>
+            <td class=numero align=right>778434,41186009</td>
+            <td class=numero align=right>858732,64251310</td>
+            <td class=numero align=right>911046,90983156</td>
+            <td class=numero align=right>1042137,96719969</td>
+            <td class=numero align=right>1180192,80488756</td>
+            <td class=numero align=right>1362664,41826208</td>
+            <td class=numero align=right>1620097,14280546</td>
+            <td class=numero align=right>1910788,55377712</td>
+            <td class=numero align=right>2356698,78355725</td>
+            <td class=numero align=right>3106286,58362573</td>
+            <td class=numero align=right>3848816,42736654</td>
+            <td class=numero align=right>3702119,04142544</td>
+            <td class=numero align=right>3852760,22801429</td>
+            <td class=numero align=right>4201994,79609830</td>
+            <td class=numero align=right>4757427,81850475</td>
+            <td class=numero align=right>5045639,80694609</td>
+            <td class=numero align=right>5555449,27605482</td>
+            <td class=numero align=right>5729323,42064358</td>
+            <td class=numero align=right>6034449,76067535</td>
+            <td class=numero align=right>6242906,05422018</td>
+            <td class=numero align=right>6555711,26033175</td>
+            <td class=numero align=right>6244507,12253246</td>
+            <td class=numero align=right>6270920,54588174</td>
+            <td class=numero align=right>6954071,23786823</td>
+            <td class=numero align=right>7418639,40916802</td>
+        </tr>
+        <tr>
+            <td class=texto>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Variaci&oacute;n de existencias (P52)</td>
+            <td class=numero align=right>12306,12211494</td>
+            <td class=numero align=right>12235,80769419</td>
+            <td class=numero align=right>8663,69869439</td>
+            <td class=numero align=right>12923,61258485</td>
+            <td class=numero align=right>-5192,94435829</td>
+            <td class=numero align=right>-4896,07000781</td>
+            <td class=numero align=right>23026,63732076</td>
+            <td class=numero align=right>19136,44343929</td>
+            <td class=numero align=right>-293,66007354</td>
+            <td class=numero align=right>46136,70253523</td>
+            <td class=numero align=right>14746,81960705</td>
+            <td class=numero align=right>6103,95302367</td>
+            <td class=numero align=right>-56814,44162924</td>
+            <td class=numero align=right>-77278,45212962</td>
+            <td class=numero align=right>-94588,10221591</td>
+            <td class=numero align=right>92044,23737937</td>
+            <td class=numero align=right>128024,98216777</td>
+            <td class=numero align=right>140332,20723613</td>
+            <td class=numero align=right>-449581,22760395</td>
+            <td class=numero align=right>74754,41849398</td>
+            <td class=numero align=right>133128,24228714</td>
+            <td class=numero align=right>-41486,85400303</td>
+            <td class=numero align=right>-57329,82226917</td>
+            <td class=numero align=right>-172711,14455744</td>
+            <td class=numero align=right>-40792,37568071</td>
+            <td class=numero align=right>20643,59941312</td>
+            <td class=numero align=right>-38769,32348415</td>
+            <td class=numero align=right>60142,34955176</td>
+            <td class=numero align=right>42551,31420714</td>
+            <td class=numero align=right>-278795,26772621</td>
+            <td class=numero align=right>268812,71928497</td>
+            <td class=numero align=right>73053,85077376</td>
+        </tr>
+        <tr>
+            <td class=texto>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EXPORTACIONES DE BIENES Y SERVICIOS (P6)</td>
+            <td class=numero align=right>294321,18754792</td>
+            <td class=numero align=right>406416,81023492</td>
+            <td class=numero align=right>490975,60233513</td>
+            <td class=numero align=right>591065,07033416</td>
+            <td class=numero align=right>793035,38151996</td>
+            <td class=numero align=right>970581,13947080</td>
+            <td class=numero align=right>1220875,18843223</td>
+            <td class=numero align=right>1547251,87402649</td>
+            <td class=numero align=right>1733096,81980194</td>
+            <td class=numero align=right>1986407,69761345</td>
+            <td class=numero align=right>2128354,61050149</td>
+            <td class=numero align=right>2339896,99485898</td>
+            <td class=numero align=right>2800475,21378822</td>
+            <td class=numero align=right>3439981,91977972</td>
+            <td class=numero align=right>4162606,96734801</td>
+            <td class=numero align=right>5030197,49814526</td>
+            <td class=numero align=right>5636474,55102166</td>
+            <td class=numero align=right>6290129,38830258</td>
+            <td class=numero align=right>6104341,25125869</td>
+            <td class=numero align=right>6500883,51237748</td>
+            <td class=numero align=right>7021692,71417091</td>
+            <td class=numero align=right>7518095,80722283</td>
+            <td class=numero align=right>7789537,80029881</td>
+            <td class=numero align=right>8782032,65986140</td>
+            <td class=numero align=right>9050265,55358990</td>
+            <td class=numero align=right>10020826,56540429</td>
+            <td class=numero align=right>11251900,41108541</td>
+            <td class=numero align=right>12150829,75231155</td>
+            <td class=numero align=right>12795887,37840589</td>
+            <td class=numero align=right>11399122,14582195</td>
+            <td class=numero align=right>13499495,90726357</td>
+            <td class=numero align=right>15292866,80001985</td>
+        </tr>
+        <tr>
+            <td class=texto>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exportaciones de bienes f.o.b. (P61)</td>
+            <td class=numero align=right>234646,99600628</td>
+            <td class=numero align=right>322205,81789185</td>
+            <td class=numero align=right>377042,93444301</td>
+            <td class=numero align=right>453116,76297944</td>
+            <td class=numero align=right>626229,56744174</td>
+            <td class=numero align=right>759783,54049427</td>
+            <td class=numero align=right>966807,27292694</td>
+            <td class=numero align=right>1180861,61210027</td>
+            <td class=numero align=right>1232543,87879782</td>
+            <td class=numero align=right>1341266,14724754</td>
+            <td class=numero align=right>1427510,37673181</td>
+            <td class=numero align=right>1585409,97029402</td>
+            <td class=numero align=right>1902036,20300756</td>
+            <td class=numero align=right>2323069,95201879</td>
+            <td class=numero align=right>2761267,15395731</td>
+            <td class=numero align=right>3337101,10875842</td>
+            <td class=numero align=right>3674532,43747374</td>
+            <td class=numero align=right>4062425,54140951</td>
+            <td class=numero align=right>3893767,03054821</td>
+            <td class=numero align=right>4033530,82065961</td>
+            <td class=numero align=right>4285348,60917053</td>
+            <td class=numero align=right>4584913,89738849</td>
+            <td class=numero align=right>4543076,69699416</td>
+            <td class=numero align=right>5204968,78627082</td>
+            <td class=numero align=right>5154200,59800856</td>
+            <td class=numero align=right>5632594,42922154</td>
+            <td class=numero align=right>6435707,23692067</td>
+            <td class=numero align=right>6879016,13314666</td>
+            <td class=numero align=right>7094508,12263739</td>
+            <td class=numero align=right>7150428,86308532</td>
+            <td class=numero align=right>9049153,18604668</td>
+            <td class=numero align=right>9575016,91887780</td>
+        </tr>
+        <tr>
+            <td class=texto>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exportaciones de servicios (P62)</td>
+            <td class=numero align=right>59674,19154164</td>
+            <td class=numero align=right>84210,99234307</td>
+            <td class=numero align=right>113932,66789212</td>
+            <td class=numero align=right>137948,30735472</td>
+            <td class=numero align=right>166805,81407822</td>
+            <td class=numero align=right>210797,59897653</td>
+            <td class=numero align=right>254067,91550529</td>
+            <td class=numero align=right>366390,26192622</td>
+            <td class=numero align=right>500552,94100412</td>
+            <td class=numero align=right>645141,55036591</td>
+            <td class=numero align=right>700844,23376968</td>
+            <td class=numero align=right>754487,02456496</td>
+            <td class=numero align=right>898439,01078066</td>
+            <td class=numero align=right>1116911,96776093</td>
+            <td class=numero align=right>1401339,81339070</td>
+            <td class=numero align=right>1693096,38938684</td>
+            <td class=numero align=right>1961942,11354792</td>
+            <td class=numero align=right>2227703,84689307</td>
+            <td class=numero align=right>2210574,22071048</td>
+            <td class=numero align=right>2467352,69171787</td>
+            <td class=numero align=right>2736344,10500038</td>
+            <td class=numero align=right>2933181,90983434</td>
+            <td class=numero align=right>3246461,10330465</td>
+            <td class=numero align=right>3577063,87359058</td>
+            <td class=numero align=right>3896064,95558134</td>
+            <td class=numero align=right>4388232,13618275</td>
+            <td class=numero align=right>4816193,17416474</td>
+            <td class=numero align=right>5271813,61916489</td>
+            <td class=numero align=right>5701379,25576850</td>
+            <td class=numero align=right>4248693,28273663</td>
+            <td class=numero align=right>4450342,72121689</td>
+            <td class=numero align=right>5717849,88114205</td>
+        </tr>
+        <tr>
+            <td class=texto>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IMPORTACIONES DE BIENES Y SERVICIOS (P7)</td>
+            <td class=numero align=right>335090,98990745</td>
+            <td class=numero align=right>470149,32756157</td>
+            <td class=numero align=right>590130,46438032</td>
+            <td class=numero align=right>693647,84171657</td>
+            <td class=numero align=right>866162,22795917</td>
+            <td class=numero align=right>1068414,96812070</td>
+            <td class=numero align=right>1349833,17077117</td>
+            <td class=numero align=right>1691983,74981852</td>
+            <td class=numero align=right>1831764,58554385</td>
+            <td class=numero align=right>2017144,23049674</td>
+            <td class=numero align=right>2119717,61613617</td>
+            <td class=numero align=right>2457109,41213824</td>
+            <td class=numero align=right>2937104,12155520</td>
+            <td class=numero align=right>3508538,45598719</td>
+            <td class=numero align=right>4382267,38507939</td>
+            <td class=numero align=right>5400254,12751280</td>
+            <td class=numero align=right>6371527,79086353</td>
+            <td class=numero align=right>7714669,94615643</td>
+            <td class=numero align=right>6191539,15665035</td>
+            <td class=numero align=right>6867867,63816143</td>
+            <td class=numero align=right>7820509,98619790</td>
+            <td class=numero align=right>8407855,60916572</td>
+            <td class=numero align=right>8523663,26676509</td>
+            <td class=numero align=right>9472380,60731587</td>
+            <td class=numero align=right>9280249,86163775</td>
+            <td class=numero align=right>9911285,60475397</td>
+            <td class=numero align=right>11096182,00246486</td>
+            <td class=numero align=right>11959346,86307857</td>
+            <td class=numero align=right>12091207,33412958</td>
+            <td class=numero align=right>10785980,40870143</td>
+            <td class=numero align=right>13257574,04942441</td>
+            <td class=numero align=right>14284014,17660511</td>
+        </tr>
+        <tr>
+            <td class=texto>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Importaciones de bienes f.o.b. (P71)</td>
+            <td class=numero align=right>263855,04890370</td>
+            <td class=numero align=right>368593,93550561</td>
+            <td class=numero align=right>469387,81142807</td>
+            <td class=numero align=right>553703,89504507</td>
+            <td class=numero align=right>686876,94603255</td>
+            <td class=numero align=right>838672,93986836</td>
+            <td class=numero align=right>1100880,33764140</td>
+            <td class=numero align=right>1380774,82509807</td>
+            <td class=numero align=right>1460125,97765110</td>
+            <td class=numero align=right>1621757,33312642</td>
+            <td class=numero align=right>1705035,94215558</td>
+            <td class=numero align=right>2022696,29772316</td>
+            <td class=numero align=right>2429679,51234424</td>
+            <td class=numero align=right>2886457,01851855</td>
+            <td class=numero align=right>3665609,66024430</td>
+            <td class=numero align=right>4532036,34347372</td>
+            <td class=numero align=right>5363159,11111940</td>
+            <td class=numero align=right>6721567,78461179</td>
+            <td class=numero align=right>5352615,74446976</td>
+            <td class=numero align=right>5881154,14294521</td>
+            <td class=numero align=right>6840203,34342063</td>
+            <td class=numero align=right>7298801,94266444</td>
+            <td class=numero align=right>7332909,01387324</td>
+            <td class=numero align=right>8082340,18201366</td>
+            <td class=numero align=right>7633207,16276534</td>
+            <td class=numero align=right>8056148,75112285</td>
+            <td class=numero align=right>8922196,99612423</td>
+            <td class=numero align=right>9499265,04920194</td>
+            <td class=numero align=right>9388075,99141380</td>
+            <td class=numero align=right>8407727,85495155</td>
+            <td class=numero align=right>10515291,24948290</td>
+            <td class=numero align=right>11227720,35350530</td>
+        </tr>
+        <tr>
+            <td class=texto>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Importaciones de servicios (P72)</td>
+            <td class=numero align=right>71235,94100375</td>
+            <td class=numero align=right>101555,39205596</td>
+            <td class=numero align=right>120742,65295225</td>
+            <td class=numero align=right>139943,94667150</td>
+            <td class=numero align=right>179285,28192662</td>
+            <td class=numero align=right>229742,02825234</td>
+            <td class=numero align=right>248952,83312977</td>
+            <td class=numero align=right>311208,92472045</td>
+            <td class=numero align=right>371638,60789275</td>
+            <td class=numero align=right>395386,89737032</td>
+            <td class=numero align=right>414681,67398059</td>
+            <td class=numero align=right>434413,11441508</td>
+            <td class=numero align=right>507424,60921096</td>
+            <td class=numero align=right>622081,43746864</td>
+            <td class=numero align=right>716657,72483509</td>
+            <td class=numero align=right>868217,78403908</td>
+            <td class=numero align=right>1008368,67974413</td>
+            <td class=numero align=right>993102,16154464</td>
+            <td class=numero align=right>838923,41218059</td>
+            <td class=numero align=right>986713,49521622</td>
+            <td class=numero align=right>980306,64277727</td>
+            <td class=numero align=right>1109053,66650128</td>
+            <td class=numero align=right>1190754,25289185</td>
+            <td class=numero align=right>1390040,42530221</td>
+            <td class=numero align=right>1647042,69887241</td>
+            <td class=numero align=right>1855136,85363112</td>
+            <td class=numero align=right>2173985,00634063</td>
+            <td class=numero align=right>2460081,81387663</td>
+            <td class=numero align=right>2703131,34271578</td>
+            <td class=numero align=right>2378252,55374988</td>
+            <td class=numero align=right>2742282,79994151</td>
+            <td class=numero align=right>3056293,82309981</td>
+        </tr>
+        <tr>
+            <td class=texto>-</td>
+        </tr>
+        <tr>
+            <td class=texto>COMPOSICI&Oacute;N PORCENTUAL</td>
+        </tr>
+        <tr>
+            <td class=texto>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Valor agregado a precios b&aacute;sicos (B1b)</td>
+            <td class=numero align=right>92,11205565</td>
+            <td class=numero align=right>91,15811402</td>
+            <td class=numero align=right>91,94964259</td>
+            <td class=numero align=right>91,77863169</td>
+            <td class=numero align=right>91,58382246</td>
+            <td class=numero align=right>91,06204501</td>
+            <td class=numero align=right>91,23916960</td>
+            <td class=numero align=right>91,54167968</td>
+            <td class=numero align=right>91,05537328</td>
+            <td class=numero align=right>90,57719444</td>
+            <td class=numero align=right>90,28690389</td>
+            <td class=numero align=right>90,45035291</td>
+            <td class=numero align=right>90,79243966</td>
+            <td class=numero align=right>90,82028612</td>
+            <td class=numero align=right>90,68341470</td>
+            <td class=numero align=right>90,32747815</td>
+            <td class=numero align=right>89,78500117</td>
+            <td class=numero align=right>89,95597204</td>
+            <td class=numero align=right>91,63213067</td>
+            <td class=numero align=right>91,71590768</td>
+            <td class=numero align=right>91,37182882</td>
+            <td class=numero align=right>91,62181201</td>
+            <td class=numero align=right>91,69876068</td>
+            <td class=numero align=right>91,90271063</td>
+            <td class=numero align=right>92,01494797</td>
+            <td class=numero align=right>92,01957507</td>
+            <td class=numero align=right>92,35731759</td>
+            <td class=numero align=right>92,71258223</td>
+            <td class=numero align=right>92,60431656</td>
+            <td class=numero align=right>92,89353505</td>
+            <td class=numero align=right>92,55942298</td>
+            <td class=numero align=right>92,62239923</td>
+        </tr>
+        <tr>
+            <td class=texto>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Impuestos a los productos y las importaciones</td>
+            <td class=numero align=right>7,88794435</td>
+            <td class=numero align=right>8,84188598</td>
+            <td class=numero align=right>8,05035741</td>
+            <td class=numero align=right>8,22136831</td>
+            <td class=numero align=right>8,41617754</td>
+            <td class=numero align=right>8,93795499</td>
+            <td class=numero align=right>8,76083040</td>
+            <td class=numero align=right>8,45832032</td>
+            <td class=numero align=right>8,94462672</td>
+            <td class=numero align=right>9,42280556</td>
+            <td class=numero align=right>9,71309611</td>
+            <td class=numero align=right>9,54964709</td>
+            <td class=numero align=right>9,20756034</td>
+            <td class=numero align=right>9,17971388</td>
+            <td class=numero align=right>9,31658530</td>
+            <td class=numero align=right>9,67252185</td>
+            <td class=numero align=right>10,21499883</td>
+            <td class=numero align=right>10,04402796</td>
+            <td class=numero align=right>8,36786933</td>
+            <td class=numero align=right>8,28409232</td>
+            <td class=numero align=right>8,62817118</td>
+            <td class=numero align=right>8,37818799</td>
+            <td class=numero align=right>8,30123932</td>
+            <td class=numero align=right>8,09728937</td>
+            <td class=numero align=right>7,98505203</td>
+            <td class=numero align=right>7,98042493</td>
+            <td class=numero align=right>7,64268241</td>
+            <td class=numero align=right>7,28741777</td>
+            <td class=numero align=right>7,39568344</td>
+            <td class=numero align=right>7,10646495</td>
+            <td class=numero align=right>7,44057702</td>
+            <td class=numero align=right>7,37760077</td>
+        </tr>
+        <tr>
+            <td class=texto>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Producto Interno Bruto a precios de mercado, nominal</td>
+            <td class=numero align=right>100,00000000</td>
+            <td class=numero align=right>100,00000000</td>
+            <td class=numero align=right>100,00000000</td>
+            <td class=numero align=right>100,00000000</td>
+            <td class=numero align=right>100,00000000</td>
+            <td class=numero align=right>100,00000000</td>
+            <td class=numero align=right>100,00000000</td>
+            <td class=numero align=right>100,00000000</td>
+            <td class=numero align=right>100,00000000</td>
+            <td class=numero align=right>100,00000000</td>
+            <td class=numero align=right>100,00000000</td>
+            <td class=numero align=right>100,00000000</td>
+            <td class=numero align=right>100,00000000</td>
+            <td class=numero align=right>100,00000000</td>
+            <td class=numero align=right>100,00000000</td>
+            <td class=numero align=right>100,00000000</td>
+            <td class=numero align=right>100,00000000</td>
+            <td class=numero align=right>100,00000000</td>
+            <td class=numero align=right>100,00000000</td>
+            <td class=numero align=right>100,00000000</td>
+            <td class=numero align=right>100,00000000</td>
+            <td class=numero align=right>100,00000000</td>
+            <td class=numero align=right>100,00000000</td>
+            <td class=numero align=right>100,00000000</td>
+            <td class=numero align=right>100,00000000</td>
+            <td class=numero align=right>100,00000000</td>
+            <td class=numero align=right>100,00000000</td>
+            <td class=numero align=right>100,00000000</td>
+            <td class=numero align=right>100,00000000</td>
+            <td class=numero align=right>100,00000000</td>
+            <td class=numero align=right>100,00000000</td>
+            <td class=numero align=right>100,00000000</td>
+        </tr>
+        <tr>
+            <td class=texto>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DEMANDA INTERNA</td>
+            <td class=numero align=right>104,62746284</td>
+            <td class=numero align=right>105,53273100</td>
+            <td class=numero align=right>107,27788906</td>
+            <td class=numero align=right>106,22799066</td>
+            <td class=numero align=right>103,51594554</td>
+            <td class=numero align=right>104,03317797</td>
+            <td class=numero align=right>104,39506147</td>
+            <td class=numero align=right>104,11233915</td>
+            <td class=numero align=right>102,42288225</td>
+            <td class=numero align=right>100,66427917</td>
+            <td class=numero align=right>99,83561371</td>
+            <td class=numero align=right>101,96487392</td>
+            <td class=numero align=right>101,98428170</td>
+            <td class=numero align=right>100,84117027</td>
+            <td class=numero align=right>102,29361917</td>
+            <td class=numero align=right>103,18648440</td>
+            <td class=numero align=right>105,29232083</td>
+            <td class=numero align=right>108,78859141</td>
+            <td class=numero align=right>100,49470767</td>
+            <td class=numero align=right>101,85326699</td>
+            <td class=numero align=right>103,69420475</td>
+            <td class=numero align=right>103,74590462</td>
+            <td class=numero align=right>102,88311187</td>
+            <td class=numero align=right>102,46541149</td>
+            <td class=numero align=right>100,76224621</td>
+            <td class=numero align=right>99,65828558</td>
+            <td class=numero align=right>99,54658745</td>
+            <td class=numero align=right>99,46832046</td>
+            <td class=numero align=right>98,12732772</td>
+            <td class=numero align=right>98,30503518</td>
+            <td class=numero align=right>99,36643691</td>
+            <td class=numero align=right>97,49856104</td>
+        </tr>
+        <tr>
+            <td class=texto>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gasto de consumo final (P3/P4)</td>
+            <td class=numero align=right>86,22559442</td>
+            <td class=numero align=right>85,09921090</td>
+            <td class=numero align=right>86,24908821</td>
+            <td class=numero align=right>85,45723475</td>
+            <td class=numero align=right>83,97410592</td>
+            <td class=numero align=right>86,28269801</td>
+            <td class=numero align=right>84,34064339</td>
+            <td class=numero align=right>81,45055969</td>
+            <td class=numero align=right>81,34308419</td>
+            <td class=numero align=right>79,97758886</td>
+            <td class=numero align=right>79,72012459</td>
+            <td class=numero align=right>82,07855455</td>
+            <td class=numero align=right>83,01923066</td>
+            <td class=numero align=right>81,91119966</td>
+            <td class=numero align=right>83,32947344</td>
+            <td class=numero align=right>82,10084288</td>
+            <td class=numero align=right>82,00555256</td>
+            <td class=numero align=right>84,17785132</td>
+            <td class=numero align=right>82,04179408</td>
+            <td class=numero align=right>82,01934847</td>
+            <td class=numero align=right>83,64602516</td>
+            <td class=numero align=right>83,89170912</td>
+            <td class=numero align=right>83,29265170</td>
+            <td class=numero align=right>83,24225820</td>
+            <td class=numero align=right>81,90851977</td>
+            <td class=numero align=right>80,76934460</td>
+            <td class=numero align=right>81,48171321</td>
+            <td class=numero align=right>81,09845990</td>
+            <td class=numero align=right>81,41960322</td>
+            <td class=numero align=right>81,74044509</td>
+            <td class=numero align=right>80,45060702</td>
+            <td class=numero align=right>78,92299017</td>
+        </tr>
+        <tr>
+            <td class=texto>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gasto de consumo final de los hogares e ISFLSH /n2</td>
+            <td class=numero align=right>73,03267796</td>
+            <td class=numero align=right>72,98918188</td>
+            <td class=numero align=right>73,47730697</td>
+            <td class=numero align=right>72,15935646</td>
+            <td class=numero align=right>71,04741738</td>
+            <td class=numero align=right>73,21977034</td>
+            <td class=numero align=right>71,71664834</td>
+            <td class=numero align=right>68,72031669</td>
+            <td class=numero align=right>68,05597427</td>
+            <td class=numero align=right>66,24976269</td>
+            <td class=numero align=right>65,42381222</td>
+            <td class=numero align=right>67,38949030</td>
+            <td class=numero align=right>68,52176522</td>
+            <td class=numero align=right>67,93479236</td>
+            <td class=numero align=right>69,81659225</td>
+            <td class=numero align=right>68,93580183</td>
+            <td class=numero align=right>69,20028390</td>
+            <td class=numero align=right>70,60037658</td>
+            <td class=numero align=right>66,29366596</td>
+            <td class=numero align=right>65,39863782</td>
+            <td class=numero align=right>66,68418894</td>
+            <td class=numero align=right>67,10166141</td>
+            <td class=numero align=right>66,16246256</td>
+            <td class=numero align=right>66,23095495</td>
+            <td class=numero align=right>64,94827785</td>
+            <td class=numero align=right>64,06066552</td>
+            <td class=numero align=right>65,12353856</td>
+            <td class=numero align=right>64,90272601</td>
+            <td class=numero align=right>64,57366971</td>
+            <td class=numero align=right>64,00425266</td>
+            <td class=numero align=right>63,58556664</td>
+            <td class=numero align=right>62,67592269</td>
+        </tr>
+        <tr>
+            <td class=texto>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gasto de consumo final del Gobierno General</td>
+            <td class=numero align=right>13,19291645</td>
+            <td class=numero align=right>12,11002903</td>
+            <td class=numero align=right>12,77178124</td>
+            <td class=numero align=right>13,29787829</td>
+            <td class=numero align=right>12,92668854</td>
+            <td class=numero align=right>13,06292766</td>
+            <td class=numero align=right>12,62399505</td>
+            <td class=numero align=right>12,73024300</td>
+            <td class=numero align=right>13,28710992</td>
+            <td class=numero align=right>13,72782618</td>
+            <td class=numero align=right>14,29631238</td>
+            <td class=numero align=right>14,68906425</td>
+            <td class=numero align=right>14,49746544</td>
+            <td class=numero align=right>13,97640730</td>
+            <td class=numero align=right>13,51288119</td>
+            <td class=numero align=right>13,16504106</td>
+            <td class=numero align=right>12,80526867</td>
+            <td class=numero align=right>13,57747474</td>
+            <td class=numero align=right>15,74812812</td>
+            <td class=numero align=right>16,62071065</td>
+            <td class=numero align=right>16,96183622</td>
+            <td class=numero align=right>16,79004770</td>
+            <td class=numero align=right>17,13018914</td>
+            <td class=numero align=right>17,01130325</td>
+            <td class=numero align=right>16,96024191</td>
+            <td class=numero align=right>16,70867908</td>
+            <td class=numero align=right>16,35817465</td>
+            <td class=numero align=right>16,19573389</td>
+            <td class=numero align=right>16,84593351</td>
+            <td class=numero align=right>17,73619243</td>
+            <td class=numero align=right>16,86504038</td>
+            <td class=numero align=right>16,24706749</td>
+        </tr>
+        <tr>
+            <td class=texto>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Formaci&oacute;n bruta de capital fijo (P51g)</td>
+            <td class=numero align=right>17,00509631</td>
+            <td class=numero align=right>19,37130829</td>
+            <td class=numero align=right>20,39289216</td>
+            <td class=numero align=right>19,98613938</td>
+            <td class=numero align=right>19,79151687</td>
+            <td class=numero align=right>17,95231936</td>
+            <td class=numero align=right>19,26963931</td>
+            <td class=numero align=right>22,11804612</td>
+            <td class=numero align=right>21,08700917</td>
+            <td class=numero align=right>19,68958206</td>
+            <td class=numero align=right>19,83481568</td>
+            <td class=numero align=right>19,78399662</td>
+            <td class=numero align=right>19,79017552</td>
+            <td class=numero align=right>19,87815645</td>
+            <td class=numero align=right>19,95180243</td>
+            <td class=numero align=right>20,29306680</td>
+            <td class=numero align=right>22,36499928</td>
+            <td class=numero align=right>23,74497153</td>
+            <td class=numero align=right>21,00356297</td>
+            <td class=numero align=right>19,45640929</td>
+            <td class=numero align=right>19,43251566</td>
+            <td class=numero align=right>20,02885590</td>
+            <td class=numero align=right>19,81561008</td>
+            <td class=numero align=right>19,83994956</td>
+            <td class=numero align=right>18,98892625</td>
+            <td class=numero align=right>18,82454301</td>
+            <td class=numero align=right>18,17776069</td>
+            <td class=numero align=right>18,20286676</td>
+            <td class=numero align=right>16,59464528</td>
+            <td class=numero align=right>17,33528982</td>
+            <td class=numero align=right>18,21184299</td>
+            <td class=numero align=right>18,39443465</td>
+        </tr>
+        <tr>
+            <td class=texto>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Variaci&oacute;n de existencias (P52)</td>
+            <td class=numero align=right>1,39677211</td>
+            <td class=numero align=right>1,06221181</td>
+            <td class=numero align=right>0,63590868</td>
+            <td class=numero align=right>0,78461653</td>
+            <td class=numero align=right>-0,24967725</td>
+            <td class=numero align=right>-0,20183940</td>
+            <td class=numero align=right>0,78477877</td>
+            <td class=numero align=right>0,54373333</td>
+            <td class=numero align=right>-0,00721111</td>
+            <td class=numero align=right>0,99710825</td>
+            <td class=numero align=right>0,28067344</td>
+            <td class=numero align=right>0,10232276</td>
+            <td class=numero align=right>-0,82512448</td>
+            <td class=numero align=right>-0,94818583</td>
+            <td class=numero align=right>-0,98765671</td>
+            <td class=numero align=right>0,79257471</td>
+            <td class=numero align=right>0,92176899</td>
+            <td class=numero align=right>0,86576856</td>
+            <td class=numero align=right>-2,55064938</td>
+            <td class=numero align=right>0,37750923</td>
+            <td class=numero align=right>0,61566394</td>
+            <td class=numero align=right>-0,17466039</td>
+            <td class=numero align=right>-0,22514992</td>
+            <td class=numero align=right>-0,61679627</td>
+            <td class=numero align=right>-0,13519981</td>
+            <td class=numero align=right>0,06439797</td>
+            <td class=numero align=right>-0,11288645</td>
+            <td class=numero align=right>0,16699381</td>
+            <td class=numero align=right>0,11307922</td>
+            <td class=numero align=right>-0,77069973</td>
+            <td class=numero align=right>0,70398690</td>
+            <td class=numero align=right>0,18113622</td>
+        </tr>
+        <tr>
+            <td class=texto>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EXPORTACIONES DE BIENES Y SERVICIOS (P6)</td>
+            <td class=numero align=right>33,40610644</td>
+            <td class=numero align=right>35,28175224</td>
+            <td class=numero align=right>36,03722388</td>
+            <td class=numero align=right>35,88465867</td>
+            <td class=numero align=right>38,12921450</td>
+            <td class=numero align=right>40,01199302</td>
+            <td class=numero align=right>41,60906831</td>
+            <td class=numero align=right>43,96284105</td>
+            <td class=numero align=right>42,55786577</td>
+            <td class=numero align=right>42,93032218</td>
+            <td class=numero align=right>40,50857250</td>
+            <td class=numero align=right>39,22453521</td>
+            <td class=numero align=right>40,67171292</td>
+            <td class=numero align=right>42,20765346</td>
+            <td class=numero align=right>43,46452236</td>
+            <td class=numero align=right>43,31403511</td>
+            <td class=numero align=right>40,58213751</td>
+            <td class=numero align=right>38,80646065</td>
+            <td class=numero align=right>34,63230503</td>
+            <td class=numero align=right>32,82941135</td>
+            <td class=numero align=right>32,47247088</td>
+            <td class=numero align=right>31,65131734</td>
+            <td class=numero align=right>30,59164936</td>
+            <td class=numero align=right>31,36291528</td>
+            <td class=numero align=right>29,99565786</td>
+            <td class=numero align=right>31,26009630</td>
+            <td class=numero align=right>32,76268315</td>
+            <td class=numero align=right>33,73851078</td>
+            <td class=numero align=right>34,00479941</td>
+            <td class=numero align=right>31,51165521</td>
+            <td class=numero align=right>35,35349171</td>
+            <td class=numero align=right>37,91849468</td>
+        </tr>
+        <tr>
+            <td class=texto>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exportaciones de bienes f.o.b. (P61)</td>
+            <td class=numero align=right>26,63295357</td>
+            <td class=numero align=right>27,97124910</td>
+            <td class=numero align=right>27,67465548</td>
+            <td class=numero align=right>27,50956061</td>
+            <td class=numero align=right>30,10917553</td>
+            <td class=numero align=right>31,32190858</td>
+            <td class=numero align=right>32,95009207</td>
+            <td class=numero align=right>33,55241136</td>
+            <td class=numero align=right>30,26630500</td>
+            <td class=numero align=right>28,98749733</td>
+            <td class=numero align=right>27,16953618</td>
+            <td class=numero align=right>26,57679775</td>
+            <td class=numero align=right>27,62355118</td>
+            <td class=numero align=right>28,50344385</td>
+            <td class=numero align=right>28,83220993</td>
+            <td class=numero align=right>28,73511719</td>
+            <td class=numero align=right>26,45632111</td>
+            <td class=numero align=right>25,06281623</td>
+            <td class=numero align=right>22,09085665</td>
+            <td class=numero align=right>20,36929938</td>
+            <td class=numero align=right>19,81799312</td>
+            <td class=numero align=right>19,30256922</td>
+            <td class=numero align=right>17,84190704</td>
+            <td class=numero align=right>18,58829287</td>
+            <td class=numero align=right>17,08277363</td>
+            <td class=numero align=right>17,57095017</td>
+            <td class=numero align=right>18,73914888</td>
+            <td class=numero align=right>19,10056882</td>
+            <td class=numero align=right>18,85350492</td>
+            <td class=numero align=right>19,76659659</td>
+            <td class=numero align=right>23,69860063</td>
+            <td class=numero align=right>23,74114892</td>
+        </tr>
+        <tr>
+            <td class=texto>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exportaciones de servicios (P62)</td>
+            <td class=numero align=right>6,77315286</td>
+            <td class=numero align=right>7,31050314</td>
+            <td class=numero align=right>8,36256841</td>
+            <td class=numero align=right>8,37509806</td>
+            <td class=numero align=right>8,02003897</td>
+            <td class=numero align=right>8,69008444</td>
+            <td class=numero align=right>8,65897624</td>
+            <td class=numero align=right>10,41042969</td>
+            <td class=numero align=right>12,29156077</td>
+            <td class=numero align=right>13,94282485</td>
+            <td class=numero align=right>13,33903632</td>
+            <td class=numero align=right>12,64773745</td>
+            <td class=numero align=right>13,04816173</td>
+            <td class=numero align=right>13,70420961</td>
+            <td class=numero align=right>14,63231243</td>
+            <td class=numero align=right>14,57891792</td>
+            <td class=numero align=right>14,12581640</td>
+            <td class=numero align=right>13,74364442</td>
+            <td class=numero align=right>12,54144838</td>
+            <td class=numero align=right>12,46011197</td>
+            <td class=numero align=right>12,65447776</td>
+            <td class=numero align=right>12,34874812</td>
+            <td class=numero align=right>12,74974232</td>
+            <td class=numero align=right>12,77462241</td>
+            <td class=numero align=right>12,91288424</td>
+            <td class=numero align=right>13,68914613</td>
+            <td class=numero align=right>14,02353426</td>
+            <td class=numero align=right>14,63794195</td>
+            <td class=numero align=right>15,15129449</td>
+            <td class=numero align=right>11,74505862</td>
+            <td class=numero align=right>11,65489109</td>
+            <td class=numero align=right>14,17734576</td>
+        </tr>
+        <tr>
+            <td class=texto>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IMPORTACIONES DE BIENES Y SERVICIOS (P7)</td>
+            <td class=numero align=right>38,03356927</td>
+            <td class=numero align=right>40,81448324</td>
+            <td class=numero align=right>43,31511294</td>
+            <td class=numero align=right>42,11264933</td>
+            <td class=numero align=right>41,64516004</td>
+            <td class=numero align=right>44,04517099</td>
+            <td class=numero align=right>46,00412978</td>
+            <td class=numero align=right>48,07518019</td>
+            <td class=numero align=right>44,98074802</td>
+            <td class=numero align=right>43,59460135</td>
+            <td class=numero align=right>40,34418622</td>
+            <td class=numero align=right>41,18940913</td>
+            <td class=numero align=right>42,65599462</td>
+            <td class=numero align=right>43,04882373</td>
+            <td class=numero align=right>45,75814153</td>
+            <td class=numero align=right>46,50051951</td>
+            <td class=numero align=right>45,87445834</td>
+            <td class=numero align=right>47,59505206</td>
+            <td class=numero align=right>35,12701270</td>
+            <td class=numero align=right>34,68267834</td>
+            <td class=numero align=right>36,16667563</td>
+            <td class=numero align=right>35,39722196</td>
+            <td class=numero align=right>33,47476123</td>
+            <td class=numero align=right>33,82832677</td>
+            <td class=numero align=right>30,75790407</td>
+            <td class=numero align=right>30,91838188</td>
+            <td class=numero align=right>32,30927060</td>
+            <td class=numero align=right>33,20683124</td>
+            <td class=numero align=right>32,13212714</td>
+            <td class=numero align=right>29,81669039</td>
+            <td class=numero align=right>34,71992862</td>
+            <td class=numero align=right>35,41705572</td>
+        </tr>
+        <tr>
+            <td class=texto>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Importaciones de bienes f.o.b. (P71)</td>
+            <td class=numero align=right>29,94813225</td>
+            <td class=numero align=right>31,99828251</td>
+            <td class=numero align=right>34,45269697</td>
+            <td class=numero align=right>33,61639230</td>
+            <td class=numero align=right>33,02510710</td>
+            <td class=numero align=right>34,57410664</td>
+            <td class=numero align=right>37,51948242</td>
+            <td class=numero align=right>39,23264542</td>
+            <td class=numero align=right>35,85480318</td>
+            <td class=numero align=right>35,04948400</td>
+            <td class=numero align=right>32,45162801</td>
+            <td class=numero align=right>33,90718579</td>
+            <td class=numero align=right>35,28659248</td>
+            <td class=numero align=right>35,41605172</td>
+            <td class=numero align=right>38,27504597</td>
+            <td class=numero align=right>39,02446800</td>
+            <td class=numero align=right>38,61428958</td>
+            <td class=numero align=right>41,46818605</td>
+            <td class=numero align=right>30,36747349</td>
+            <td class=numero align=right>29,69978283</td>
+            <td class=numero align=right>31,63315641</td>
+            <td class=numero align=right>30,72808626</td>
+            <td class=numero align=right>28,79834300</td>
+            <td class=numero align=right>28,86413206</td>
+            <td class=numero align=right>25,29904444</td>
+            <td class=numero align=right>25,13125880</td>
+            <td class=numero align=right>25,97917707</td>
+            <td class=numero align=right>26,37606343</td>
+            <td class=numero align=right>24,94861290</td>
+            <td class=numero align=right>23,24226531</td>
+            <td class=numero align=right>27,53823288</td>
+            <td class=numero align=right>27,83900887</td>
+        </tr>
+        <tr>
+            <td class=texto>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Importaciones de servicios (P72)</td>
+            <td class=numero align=right>8,08543703</td>
+            <td class=numero align=right>8,81620074</td>
+            <td class=numero align=right>8,86241597</td>
+            <td class=numero align=right>8,49625703</td>
+            <td class=numero align=right>8,62005294</td>
+            <td class=numero align=right>9,47106435</td>
+            <td class=numero align=right>8,48464736</td>
+            <td class=numero align=right>8,84253477</td>
+            <td class=numero align=right>9,12594485</td>
+            <td class=numero align=right>8,54511735</td>
+            <td class=numero align=right>7,89255821</td>
+            <td class=numero align=right>7,28222334</td>
+            <td class=numero align=right>7,36940214</td>
+            <td class=numero align=right>7,63277202</td>
+            <td class=numero align=right>7,48309556</td>
+            <td class=numero align=right>7,47605151</td>
+            <td class=numero align=right>7,26016875</td>
+            <td class=numero align=right>6,12686601</td>
+            <td class=numero align=right>4,75953920</td>
+            <td class=numero align=right>4,98289550</td>
+            <td class=numero align=right>4,53351922</td>
+            <td class=numero align=right>4,66913570</td>
+            <td class=numero align=right>4,67641823</td>
+            <td class=numero align=right>4,96419471</td>
+            <td class=numero align=right>5,45885963</td>
+            <td class=numero align=right>5,78712308</td>
+            <td class=numero align=right>6,33009352</td>
+            <td class=numero align=right>6,83076781</td>
+            <td class=numero align=right>7,18351423</td>
+            <td class=numero align=right>6,57442508</td>
+            <td class=numero align=right>7,18169574</td>
+            <td class=numero align=right>7,57804685</td>
+        </tr>
+        <tr>
+            <td class=texto>-</td>
+        </tr>
+        <tr>
+            <td class=texto>TASA DE VARIACION ANUAL</td>
+        </tr>
+        <tr>
+            <td class=texto>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Valor agregado a precios b&aacute;sicos (B1b)</td>
+            <td class=numero align=right></td>
+            <td class=numero align=right>29,39119009</td>
+            <td class=numero align=right>19,30036729</td>
+            <td class=numero align=right>20,67280968</td>
+            <td class=numero align=right>26,00431489</td>
+            <td class=numero align=right>15,96464193</td>
+            <td class=numero align=right>21,19523292</td>
+            <td class=numero align=right>20,34541355</td>
+            <td class=numero align=right>15,09446012</td>
+            <td class=numero align=right>13,02500694</td>
+            <td class=numero align=right>13,18756146</td>
+            <td class=numero align=right>13,74370994</td>
+            <td class=numero align=right>15,86166268</td>
+            <td class=numero align=right>18,40195183</td>
+            <td class=numero align=right>17,33039777</td>
+            <td class=numero align=right>20,78636663</td>
+            <td class=numero align=right>18,87763241</td>
+            <td class=numero align=right>16,92546887</td>
+            <td class=numero align=right>10,76935991</td>
+            <td class=numero align=right>12,44723108</td>
+            <td class=numero align=right>8,78896484</td>
+            <td class=numero align=right>10,14787955</td>
+            <td class=numero align=right>7,28952443</td>
+            <td class=numero align=right>10,21347133</td>
+            <td class=numero align=right>7,88333720</td>
+            <td class=numero align=right>6,25078356</td>
+            <td class=numero align=right>7,52866928</td>
+            <td class=numero align=right>5,26911590</td>
+            <td class=numero align=right>4,36207807</td>
+            <td class=numero align=right>-3,56731501</td>
+            <td class=numero align=right>5,17685850</td>
+            <td class=numero align=right>5,69342415</td>
+        </tr>
+        <tr>
+            <td class=texto>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Impuestos a los productos y las importaciones</td>
+            <td class=numero align=right></td>
+            <td class=numero align=right>46,55712029</td>
+            <td class=numero align=right>7,68552217</td>
+            <td class=numero align=right>23,46584533</td>
+            <td class=numero align=right>29,26442356</td>
+            <td class=numero align=right>23,85975961</td>
+            <td class=numero align=right>18,56287521</td>
+            <td class=numero align=right>15,80594256</td>
+            <td class=numero align=right>22,36178711</td>
+            <td class=numero align=right>19,69589736</td>
+            <td class=numero align=right>17,04968901</td>
+            <td class=numero align=right>11,62758282</td>
+            <td class=numero align=right>11,29037035</td>
+            <td class=numero align=right>18,00767481</td>
+            <td class=numero align=right>19,25954913</td>
+            <td class=numero align=right>25,89510723</td>
+            <td class=numero align=right>26,30334181</td>
+            <td class=numero align=right>14,74994973</td>
+            <td class=numero align=right>-9,40403856</td>
+            <td class=numero align=right>11,21975215</td>
+            <td class=numero align=right>13,73418449</td>
+            <td class=numero align=right>6,66475254</td>
+            <td class=numero align=right>6,21492932</td>
+            <td class=numero align=right>7,26710298</td>
+            <td class=numero align=right>6,25818631</td>
+            <td class=numero align=right>6,18387475</td>
+            <td class=numero align=right>2,60132756</td>
+            <td class=numero align=right>-0,00887295</td>
+            <td class=numero align=right>6,03636001</td>
+            <td class=numero align=right>-7,62694547</td>
+            <td class=numero align=right>10,51927939</td>
+            <td class=numero align=right>4,72759091</td>
+        </tr>
+        <tr>
+            <td class=texto>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Producto Interno Bruto a precios de mercado</td>
+            <td class=numero align=right></td>
+            <td class=numero align=right>30,74522911</td>
+            <td class=numero align=right>18,27339592</td>
+            <td class=numero align=right>20,89765903</td>
+            <td class=numero align=right>26,27234043</td>
+            <td class=numero align=right>16,62910905</td>
+            <td class=numero align=right>20,95995397</td>
+            <td class=numero align=right>19,94771819</td>
+            <td class=numero align=right>15,70915391</td>
+            <td class=numero align=right>13,62169319</td>
+            <td class=numero align=right>13,55148223</td>
+            <td class=numero align=right>13,53816848</td>
+            <td class=numero align=right>15,42512040</td>
+            <td class=numero align=right>18,36564854</td>
+            <td class=numero align=right>17,50748835</td>
+            <td class=numero align=right>21,26232680</td>
+            <td class=numero align=right>19,59588578</td>
+            <td class=numero align=right>16,70323961</td>
+            <td class=numero align=right>8,74313812</td>
+            <td class=numero align=right>12,34451724</td>
+            <td class=numero align=right>9,19863140</td>
+            <td class=numero align=right>9,84734939</td>
+            <td class=numero align=right>7,19949283</td>
+            <td class=numero align=right>9,96888624</td>
+            <td class=numero align=right>7,75174403</td>
+            <td class=numero align=right>6,24544086</td>
+            <td class=numero align=right>7,13544647</td>
+            <td class=numero align=right>4,86573597</td>
+            <td class=numero align=right>4,48408999</td>
+            <td class=numero align=right>-3,86755243</td>
+            <td class=numero align=right>5,55651577</td>
+            <td class=numero align=right>5,62156058</td>
+        </tr>
+        <tr>
+            <td class=texto>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DEMANDA INTERNA</td>
+            <td class=numero align=right></td>
+            <td class=numero align=right>31,87647602</td>
+            <td class=numero align=right>20,22924192</td>
+            <td class=numero align=right>19,71446779</td>
+            <td class=numero align=right>23,04855467</td>
+            <td class=numero align=right>17,21186330</td>
+            <td class=numero align=right>21,38071793</td>
+            <td class=numero align=right>19,62287622</td>
+            <td class=numero align=right>13,83151262</td>
+            <td class=numero align=right>11,67080628</td>
+            <td class=numero align=right>12,61672969</td>
+            <td class=numero align=right>15,95967214</td>
+            <td class=numero align=right>15,44709017</td>
+            <td class=numero align=right>17,03892325</td>
+            <td class=numero align=right>19,19998777</td>
+            <td class=numero align=right>22,32075954</td>
+            <td class=numero align=right>22,03660633</td>
+            <td class=numero align=right>20,57841399</td>
+            <td class=numero align=right>0,45271968</td>
+            <td class=numero align=right>13,86327076</td>
+            <td class=numero align=right>11,17233229</td>
+            <td class=numero align=right>9,90211709</td>
+            <td class=numero align=right>6,30797864</td>
+            <td class=numero align=right>9,52241796</td>
+            <td class=numero align=right>5,96071010</td>
+            <td class=numero align=right>5,08140583</td>
+            <td class=numero align=right>7,01536786</td>
+            <td class=numero align=right>4,78328689</td>
+            <td class=numero align=right>3,07547662</td>
+            <td class=numero align=right>-3,69345768</td>
+            <td class=numero align=right>6,69621190</td>
+            <td class=numero align=right>3,63610181</td>
+        </tr>
+        <tr>
+            <td class=texto>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gasto de consumo final (P3/P4)</td>
+            <td class=numero align=right></td>
+            <td class=numero align=right>29,03727602</td>
+            <td class=numero align=right>19,87152935</td>
+            <td class=numero align=right>19,78769681</td>
+            <td class=numero align=right>24,08085660</td>
+            <td class=numero align=right>19,83544314</td>
+            <td class=numero align=right>18,23738222</td>
+            <td class=numero align=right>15,83749408</td>
+            <td class=numero align=right>15,55647358</td>
+            <td class=numero align=right>11,71434123</td>
+            <td class=numero align=right>13,18593671</td>
+            <td class=numero align=right>16,89706711</td>
+            <td class=numero align=right>16,74797086</td>
+            <td class=numero align=right>16,78586025</td>
+            <td class=numero align=right>19,54210377</td>
+            <td class=numero align=right>19,47440479</td>
+            <td class=numero align=right>19,45707684</td>
+            <td class=numero align=right>19,79466811</td>
+            <td class=numero align=right>5,98372381</td>
+            <td class=numero align=right>12,31378119</td>
+            <td class=numero align=right>11,36435048</td>
+            <td class=numero align=right>10,16999152</td>
+            <td class=numero align=right>6,43399823</td>
+            <td class=numero align=right>9,90235315</td>
+            <td class=numero align=right>6,02530550</td>
+            <td class=numero align=right>4,76779032</td>
+            <td class=numero align=right>8,08035854</td>
+            <td class=numero align=right>4,37249475</td>
+            <td class=numero align=right>4,89783851</td>
+            <td class=numero align=right>-3,48873317</td>
+            <td class=numero align=right>3,89086773</td>
+            <td class=numero align=right>3,61599118</td>
+        </tr>
+        <tr>
+            <td class=texto>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gasto de consumo final de los hogares e ISFLSH /n2</td>
+            <td class=numero align=right></td>
+            <td class=numero align=right>30,66736114</td>
+            <td class=numero align=right>19,06436537</td>
+            <td class=numero align=right>18,72913737</td>
+            <td class=numero align=right>24,32654772</td>
+            <td class=numero align=right>20,19517239</td>
+            <td class=numero align=right>18,47677809</td>
+            <td class=numero align=right>14,93628566</td>
+            <td class=numero align=right>14,59055460</td>
+            <td class=numero align=right>10,60616339</td>
+            <td class=numero align=right>12,13581075</td>
+            <td class=numero align=right>16,94945684</td>
+            <td class=numero align=right>17,36448764</td>
+            <td class=numero align=right>17,35170175</td>
+            <td class=numero align=right>20,76245640</td>
+            <td class=numero align=right>19,73250857</td>
+            <td class=numero align=right>20,05473251</td>
+            <td class=numero align=right>19,06443443</td>
+            <td class=numero align=right>2,10967169</td>
+            <td class=numero align=right>10,82775841</td>
+            <td class=numero align=right>11,34516574</td>
+            <td class=numero align=right>10,53504231</td>
+            <td class=numero align=right>5,69905844</td>
+            <td class=numero align=right>10,08272770</td>
+            <td class=numero align=right>5,66494498</td>
+            <td class=numero align=right>4,79344295</td>
+            <td class=numero align=right>8,91300180</td>
+            <td class=numero align=right>4,51017067</td>
+            <td class=numero align=right>3,95435650</td>
+            <td class=numero align=right>-4,71525793</td>
+            <td class=numero align=right>4,86601421</td>
+            <td class=numero align=right>4,11055707</td>
+        </tr>
+        <tr>
+            <td class=texto>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gasto de consumo final del Gobierno General</td>
+            <td class=numero align=right></td>
+            <td class=numero align=right>20,01353342</td>
+            <td class=numero align=right>24,73644244</td>
+            <td class=numero align=right>25,87769283</td>
+            <td class=numero align=right>22,74764292</td>
+            <td class=numero align=right>17,85830613</td>
+            <td class=numero align=right>16,89553058</td>
+            <td class=numero align=right>20,95724006</td>
+            <td class=numero align=right>20,77069126</td>
+            <td class=numero align=right>17,39037785</td>
+            <td class=numero align=right>18,25378903</td>
+            <td class=numero align=right>16,65731750</td>
+            <td class=numero align=right>13,91955709</td>
+            <td class=numero align=right>14,11143012</td>
+            <td class=numero align=right>13,61036461</td>
+            <td class=numero align=right>18,14086782</td>
+            <td class=numero align=right>16,32758623</td>
+            <td class=numero align=right>23,74088579</td>
+            <td class=numero align=right>26,12808379</td>
+            <td class=numero align=right>18,56937534</td>
+            <td class=numero align=right>11,43983797</td>
+            <td class=numero align=right>8,73482165</td>
+            <td class=numero align=right>9,37119539</td>
+            <td class=numero align=right>9,20568691</td>
+            <td class=numero align=right>7,42831508</td>
+            <td class=numero align=right>4,66955506</td>
+            <td class=numero align=right>4,88802472</td>
+            <td class=numero align=right>3,82439305</td>
+            <td class=numero align=right>8,67874495</td>
+            <td class=numero align=right>1,21276971</td>
+            <td class=numero align=right>0,37187560</td>
+            <td class=numero align=right>1,75134979</td>
+        </tr>
+        <tr>
+            <td class=texto>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Formaci&oacute;n bruta de capital fijo (P51g)</td>
+            <td class=numero align=right></td>
+            <td class=numero align=right>48,93806505</td>
+            <td class=numero align=right>24,51077504</td>
+            <td class=numero align=right>18,48625709</td>
+            <td class=numero align=right>25,04271629</td>
+            <td class=numero align=right>5,79093188</td>
+            <td class=numero align=right>29,83585219</td>
+            <td class=numero align=right>37,67819528</td>
+            <td class=numero align=right>10,31534956</td>
+            <td class=numero align=right>6,09203199</td>
+            <td class=numero align=right>14,38905680</td>
+            <td class=numero align=right>13,24727071</td>
+            <td class=numero align=right>15,46116979</td>
+            <td class=numero align=right>18,89186516</td>
+            <td class=numero align=right>17,94283832</td>
+            <td class=numero align=right>23,33645075</td>
+            <td class=numero align=right>31,80668676</td>
+            <td class=numero align=right>23,90409976</td>
+            <td class=numero align=right>-3,81149345</td>
+            <td class=numero align=right>4,06905302</td>
+            <td class=numero align=right>9,06452900</td>
+            <td class=numero align=right>13,21831771</td>
+            <td class=numero align=right>6,05814737</td>
+            <td class=numero align=right>10,10396082</td>
+            <td class=numero align=right>3,12979448</td>
+            <td class=numero align=right>5,32569586</td>
+            <td class=numero align=right>3,45443747</td>
+            <td class=numero align=right>5,01057045</td>
+            <td class=numero align=right>-4,74706901</td>
+            <td class=numero align=right>0,42298652</td>
+            <td class=numero align=right>10,89394590</td>
+            <td class=numero align=right>6,68052074</td>
+        </tr>
+        <tr>
+            <td class=texto>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EXPORTACIONES DE BIENES Y SERVICIOS (P6)</td>
+            <td class=numero align=right></td>
+            <td class=numero align=right>38,08615466</td>
+            <td class=numero align=right>20,80592878</td>
+            <td class=numero align=right>20,38583333</td>
+            <td class=numero align=right>34,17057128</td>
+            <td class=numero align=right>22,38812569</td>
+            <td class=numero align=right>25,78806024</td>
+            <td class=numero align=right>26,73300995</td>
+            <td class=numero align=right>12,01129234</td>
+            <td class=numero align=right>14,61608347</td>
+            <td class=numero align=right>7,14591033</td>
+            <td class=numero align=right>9,93924524</td>
+            <td class=numero align=right>19,68369633</td>
+            <td class=numero align=right>22,83564957</td>
+            <td class=numero align=right>21,00665249</td>
+            <td class=numero align=right>20,84248015</td>
+            <td class=numero align=right>12,05274849</td>
+            <td class=numero align=right>11,59687374</td>
+            <td class=numero align=right>-2,95364571</td>
+            <td class=numero align=right>6,49606968</td>
+            <td class=numero align=right>8,01136031</td>
+            <td class=numero align=right>7,06956447</td>
+            <td class=numero align=right>3,61051522</td>
+            <td class=numero align=right>12,74138319</td>
+            <td class=numero align=right>3,05433724</td>
+            <td class=numero align=right>10,72411639</td>
+            <td class=numero align=right>12,28515270</td>
+            <td class=numero align=right>7,98913347</td>
+            <td class=numero align=right>5,30875372</td>
+            <td class=numero align=right>-10,91573559</td>
+            <td class=numero align=right>18,42575011</td>
+            <td class=numero align=right>13,28472489</td>
+        </tr>
+        <tr>
+            <td class=texto>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exportaciones de bienes f.o.b. (P61)</td>
+            <td class=numero align=right></td>
+            <td class=numero align=right>37,31512586</td>
+            <td class=numero align=right>17,01928193</td>
+            <td class=numero align=right>20,17643658</td>
+            <td class=numero align=right>38,20489962</td>
+            <td class=numero align=right>21,32667954</td>
+            <td class=numero align=right>27,24772536</td>
+            <td class=numero align=right>22,14033191</td>
+            <td class=numero align=right>4,37665736</td>
+            <td class=numero align=right>8,82096535</td>
+            <td class=numero align=right>6,43006085</td>
+            <td class=numero align=right>11,06118709</td>
+            <td class=numero align=right>19,97125278</td>
+            <td class=numero align=right>22,13594822</td>
+            <td class=numero align=right>18,86285006</td>
+            <td class=numero align=right>20,85397474</td>
+            <td class=numero align=right>10,11151049</td>
+            <td class=numero align=right>10,55625744</td>
+            <td class=numero align=right>-4,15167021</td>
+            <td class=numero align=right>3,58942353</td>
+            <td class=numero align=right>6,24311056</td>
+            <td class=numero align=right>6,99045318</td>
+            <td class=numero align=right>-0,91249697</td>
+            <td class=numero align=right>14,56924753</td>
+            <td class=numero align=right>-0,97537930</td>
+            <td class=numero align=right>9,28163004</td>
+            <td class=numero align=right>14,25831058</td>
+            <td class=numero align=right>6,88827008</td>
+            <td class=numero align=right>3,13259898</td>
+            <td class=numero align=right>0,78822576</td>
+            <td class=numero align=right>26,55399221</td>
+            <td class=numero align=right>5,81119274</td>
+        </tr>
+        <tr>
+            <td class=texto>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exportaciones de servicios (P62)</td>
+            <td class=numero align=right></td>
+            <td class=numero align=right>41,11794424</td>
+            <td class=numero align=right>35,29429439</td>
+            <td class=numero align=right>21,07880023</td>
+            <td class=numero align=right>20,91907271</td>
+            <td class=numero align=right>26,37305249</td>
+            <td class=numero align=right>20,52694942</td>
+            <td class=numero align=right>44,20957530</td>
+            <td class=numero align=right>36,61742492</td>
+            <td class=numero align=right>28,88577761</td>
+            <td class=numero align=right>8,63418011</td>
+            <td class=numero align=right>7,65402470</td>
+            <td class=numero align=right>19,07945154</td>
+            <td class=numero align=right>24,31694910</td>
+            <td class=numero align=right>25,46555627</td>
+            <td class=numero align=right>20,81983065</td>
+            <td class=numero align=right>15,87893789</td>
+            <td class=numero align=right>13,54584988</td>
+            <td class=numero align=right>-0,76893642</td>
+            <td class=numero align=right>11,61591719</td>
+            <td class=numero align=right>10,90202524</td>
+            <td class=numero align=right>7,19345949</td>
+            <td class=numero align=right>10,68052385</td>
+            <td class=numero align=right>10,18348164</td>
+            <td class=numero align=right>8,91795879</td>
+            <td class=numero align=right>12,63241723</td>
+            <td class=numero align=right>9,75247035</td>
+            <td class=numero align=right>9,46017796</td>
+            <td class=numero align=right>8,14834643</td>
+            <td class=numero align=right>-25,47955342</td>
+            <td class=numero align=right>4,74615194</td>
+            <td class=numero align=right>28,48111346</td>
+        </tr>
+        <tr>
+            <td class=texto>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IMPORTACIONES DE BIENES Y SERVICIOS (P7)</td>
+            <td class=numero align=right></td>
+            <td class=numero align=right>40,30497439</td>
+            <td class=numero align=right>25,51979335</td>
+            <td class=numero align=right>17,54143932</td>
+            <td class=numero align=right>24,87060088</td>
+            <td class=numero align=right>23,35044564</td>
+            <td class=numero align=right>26,33978473</td>
+            <td class=numero align=right>25,34761972</td>
+            <td class=numero align=right>8,26135805</td>
+            <td class=numero align=right>10,12027672</td>
+            <td class=numero align=right>5,08507940</td>
+            <td class=numero align=right>15,91682748</td>
+            <td class=numero align=right>19,53493430</td>
+            <td class=numero align=right>19,45570572</td>
+            <td class=numero align=right>24,90293152</td>
+            <td class=numero align=right>23,22968119</td>
+            <td class=numero align=right>17,98570290</td>
+            <td class=numero align=right>21,08037820</td>
+            <td class=numero align=right>-19,74330464</td>
+            <td class=numero align=right>10,92343058</td>
+            <td class=numero align=right>13,87100623</td>
+            <td class=numero align=right>7,51032380</td>
+            <td class=numero align=right>1,37737448</td>
+            <td class=numero align=right>11,13039442</td>
+            <td class=numero align=right>-2,02832586</td>
+            <td class=numero align=right>6,79977105</td>
+            <td class=numero align=right>11,95502223</td>
+            <td class=numero align=right>7,77893568</td>
+            <td class=numero align=right>1,10257251</td>
+            <td class=numero align=right>-10,79484364</td>
+            <td class=numero align=right>22,91487233</td>
+            <td class=numero align=right>7,74229224</td>
+        </tr>
+        <tr>
+            <td class=texto>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Importaciones de bienes f.o.b. (P71)</td>
+            <td class=numero align=right></td>
+            <td class=numero align=right>39,69561585</td>
+            <td class=numero align=right>27,34550578</td>
+            <td class=numero align=right>17,96298957</td>
+            <td class=numero align=right>24,05131193</td>
+            <td class=numero align=right>22,09944514</td>
+            <td class=numero align=right>31,26455920</td>
+            <td class=numero align=right>25,42460592</td>
+            <td class=numero align=right>5,74685685</td>
+            <td class=numero align=right>11,06968563</td>
+            <td class=numero align=right>5,13508447</td>
+            <td class=numero align=right>18,63071315</td>
+            <td class=numero align=right>20,12082660</td>
+            <td class=numero align=right>18,79990772</td>
+            <td class=numero align=right>26,99339144</td>
+            <td class=numero align=right>23,63663247</td>
+            <td class=numero align=right>18,33883722</td>
+            <td class=numero align=right>25,32851712</td>
+            <td class=numero align=right>-20,36655858</td>
+            <td class=numero align=right>9,87439457</td>
+            <td class=numero align=right>16,30715974</td>
+            <td class=numero align=right>6,70445857</td>
+            <td class=numero align=right>0,46729685</td>
+            <td class=numero align=right>10,22010728</td>
+            <td class=numero align=right>-5,55696753</td>
+            <td class=numero align=right>5,54081108</td>
+            <td class=numero align=right>10,75015211</td>
+            <td class=numero align=right>6,46777978</td>
+            <td class=numero align=right>-1,17050169</td>
+            <td class=numero align=right>-10,44248190</td>
+            <td class=numero align=right>25,06697922</td>
+            <td class=numero align=right>6,77517234</td>
+        </tr>
+        <tr>
+            <td class=texto>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Importaciones de servicios (P72)</td>
+            <td class=numero align=right></td>
+            <td class=numero align=right>42,56201382</td>
+            <td class=numero align=right>18,89339454</td>
+            <td class=numero align=right>15,90266012</td>
+            <td class=numero align=right>28,11220935</td>
+            <td class=numero align=right>28,14327299</td>
+            <td class=numero align=right>8,36190271</td>
+            <td class=numero align=right>25,00718341</td>
+            <td class=numero align=right>19,41772179</td>
+            <td class=numero align=right>6,39015672</td>
+            <td class=numero align=right>4,87997370</td>
+            <td class=numero align=right>4,75821375</td>
+            <td class=numero align=right>16,80692695</td>
+            <td class=numero align=right>22,59583516</td>
+            <td class=numero align=right>15,20320036</td>
+            <td class=numero align=right>21,14817910</td>
+            <td class=numero align=right>16,14236638</td>
+            <td class=numero align=right>-1,51398179</td>
+            <td class=numero align=right>-15,52496363</td>
+            <td class=numero align=right>17,61663590</td>
+            <td class=numero align=right>-0,64931234</td>
+            <td class=numero align=right>13,13334197</td>
+            <td class=numero align=right>7,36669368</td>
+            <td class=numero align=right>16,73612938</td>
+            <td class=numero align=right>18,48883449</td>
+            <td class=numero align=right>12,63441166</td>
+            <td class=numero align=right>17,18731166</td>
+            <td class=numero align=right>13,16001751</td>
+            <td class=numero align=right>9,87973357</td>
+            <td class=numero align=right>-12,01860908</td>
+            <td class=numero align=right>15,30662694</td>
+            <td class=numero align=right>11,45071629</td>
+        </tr>
+    </table>
+</HTML>
