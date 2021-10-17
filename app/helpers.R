@@ -44,7 +44,8 @@ cleanGDPTable <- function(){
 
 gdpWorld2020 <- function() {
   table <- cleanGDPTable()
-  table <- table %>% select(`Country Name`, `2020`)
+  table <- table %>% select(`Country Name`, `2019`) %>%
+    rename(country_name = `Country Name`, gdp2019 = `2019`)
   return(table)
 }
 

@@ -31,49 +31,31 @@ ui <- fluidPage(
                         )
                       
              ),
-             navbarMenu("More",
-                        tabPanel("Table",
-                                 DT::dataTableOutput("table")
-                        ),
-                        tabPanel("About",
-                                 fluidRow(
-                                   column(6,
-                                    "Colum 6"
-                                   ),
-                                   column(3,
-                            
-                                   )
-                                 )
+             tabPanel("GDP", 
+                        fluidRow(
+                          column(6,
+                                 plotOutput("plot_gdp_cr")
+                          ),
+                          column(6,
+                                 ggiraphOutput("plot_gdp_world")
+                          )
                         )
              )
-  ),  
-  
-  # fluidRow(
-  #   column(4, 
-  #          "Distribution 1",
-  #          numericInput("n1", label = "n", value = 1000, min = 1),
-  #          numericInput("mean1", label = "µ", value = 0, step = 0.1),
-  #          numericInput("sd1", label = "??", value = 0.5, min = 0.1, step = 0.1)
-  #   ),
-  #   column(4, 
-  #          "Distribution 2",
-  #          numericInput("n2", label = "n", value = 1000, min = 1),
-  #          numericInput("mean2", label = "µ", value = 0, step = 0.1),
-  #          numericInput("sd2", label = "??", value = 0.5, min = 0.1, step = 0.1)
-  #   ),
-  #   column(4,
-  #          "Frequency polygon",
-  #          numericInput("binwidth", label = "Bin width", value = 0.1, step = 0.1),
-  #          sliderInput("range", label = "range", value = c(-3, 3), min = -5, max = 5)
-  #   )
-  # ),
-  # fluidRow(
-  #   column(9, plotOutput("hist")),
-  #   column(3, verbatimTextOutput("ttest"))
-  # )
+  )
 )
 
-
+gdp_word <- gdpWorld2020()
+# 
+# gg_point = ggplot(gdp_word) +
+#   geom_point_interactive(aes(x = `Country Name`, y = `2020`)) + 
+#   theme_minimal()
+# 
+# 
+# 
+# ggplot(gdp_word) + 
+#   geom_point(mapping = aes(x = `Country Name`, y = `2020`))
+# 
+# 
 
 
 
@@ -87,6 +69,7 @@ server <- function(input, output, session) {
   gdp_costarica <- gdpCostaRica()
   gdpcr_plot <- plotGDPCostaRica(gdp_costarica)
     
+  gdp_word <- gdpWorld2020()
   
   
   output$plot_population <- renderPlot({pop_plot}, res = 96)
@@ -102,7 +85,30 @@ server <- function(input, output, session) {
   }) 
   
   output$plot_gdp_cr <- renderPlot({gdpcr_plot}, res = 96)
-
+  
+  
+  
+  output$plot_gdp_word <- renderGirafe({
+    girafe(ggobj = gg_point )
+  })
+  
+  filterIris <- reactive({
+    filter(iris, Species == input$species)
+  })  
+  
+  output$plot_gdp_world <- renderggiraph({
+    gg_point = ggplot(gdp_word) +
+      scale_y_continuous(labels = label_number(suffix = " M", scale = 1e-6)) +
+      geom_point_interactive(aes(x = country_name, y = gdp2019,
+                                 tooltip = country_name, data_id = gdp2019)) +
+      
+      theme_minimal()
+    
+    girafe(ggobj = gg_point)
+  })
+  
+  
+  
 }
 
 # Run the app
