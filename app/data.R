@@ -9,45 +9,14 @@ library(scales)
 
 ## make sure getwd works ***************
 
-
 # Source helpers ----
 source("helpers.R")
 
-population()
-# View(population())
-# femalePop <- population() %>% filter(dem_comp == 'Mujeres') %>%
-# malePop <- population() %>% filter(dem_comp == 'Hombres')
-
-# User interface ----
+# User interface
 ui <- fluidPage(
-  
   titlePanel("Costa Rica ..."),
-  
-  sidebarLayout(
-    sidebarPanel(
-      helpText("..."),
-      
-      # dateRangeInput("dates",
-      #                "Date range",
-      #                start = "2013-01-01",
-      #                end = as.character(Sys.Date())),
-      
-      br(),
-      br(),
-      
-      checkboxInput("log", "Plot y axis on log scale",
-                    value = FALSE),
-      
-      checkboxInput("adjust",
-                    "Adjust prices for inflation", value = FALSE)
-    ),
-    
-    mainPanel(
-      plotOutput("plot", click = "plot_click"),
-      tableOutput("data")
-  )  
-
-  )  
+  plotOutput("plot", click = "plot_click"),
+  tableOutput("data")
 )
 
 server <- function(input, output, session) {
