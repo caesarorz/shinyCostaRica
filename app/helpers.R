@@ -51,7 +51,12 @@ gdpWorld2020 <- function() {
 
 gdpCostaRica <- function(){
   table <- cleanGDPTable()
-  table <- table %>% filter(`Country Name` == 'Costa Rica')
+  table <- table %>% filter(`Country Name` == 'Costa Rica') %>% 
+    pivot_longer(c(5:ncol(table)), 
+                   names_to = "year", 
+                   values_to = "gdp"
+                 ) %>%
+    mutate(year=as.integer(year))
   return(table)
 }
 

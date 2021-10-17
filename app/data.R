@@ -75,6 +75,8 @@ ui <- fluidPage(
 
 
 
+
+
 server <- function(input, output, session) {
   pop_table <- population()
   pop_plot <- plotPopulation(pop_table)
@@ -82,6 +84,11 @@ server <- function(input, output, session) {
   nat_mort_table <- nat_mort()
   nat_mort_plot <- plotNat_Mort(nat_mort_table)
     
+  gdp_costarica <- gdpCostaRica()
+  gdpcr_plot <- plotGDPCostaRica(gdp_costarica)
+    
+  
+  
   output$plot_population <- renderPlot({pop_plot}, res = 96)
   output$data_population <- renderTable({
     req(input$plot_click)
@@ -93,6 +100,9 @@ server <- function(input, output, session) {
     req(input$plot_click)
     nearPoints(nat_mort_table, input$plot_click)
   }) 
+  
+  output$plot_gdp_cr <- renderPlot({gdpcr_plot}, res = 96)
+
 }
 
 # Run the app

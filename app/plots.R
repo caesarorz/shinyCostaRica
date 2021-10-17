@@ -23,3 +23,15 @@ plotNat_Mort <- function(plot_table){
                                      size=10, angle=0))
   return(plot)
 }
+
+plotGDPCostaRica <- function(plot_table){
+  plot <-  ggplot(data = gdp_costarica, aes(x = year, y = gdp))+
+    geom_line(color = "#00AFBB", size = 2) + 
+    scale_y_continuous(labels = label_number(suffix = " M", scale = 1e-6))
+  return(plot)
+}
+
+
+
+
+
