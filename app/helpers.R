@@ -34,6 +34,22 @@ loadTableGDP <- function(){
 }
 
 
+cleanGDPTable <- function(){
+  clean_table <- loadTableGDP()
+  colnames(clean_table) <- clean_table %>% slice(3)
+  clean_table <- clean_table %>% slice(4:nrow(clean_table)) %>%
+    mutate_at(c(5:ncol(clean_table)), as.numeric)
+  return(clean_table)
+}
+
+
+gdpCostaRica <- function(){
+  table <- cleanGDPTable()
+  table <- table %>% filter(`Country Name` == 'Costa Rica')
+  return(table)
+}
+
+
 cleanTable <- function(){
   # table cleaning and fixing (general)
   clean_table <- loadTablePopulation()

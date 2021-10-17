@@ -9,7 +9,6 @@ source("C:/Users/50687/Desktop/dojo/bootcamp/week6/weekendAssingment/app/helpers
 source("C:/Users/50687/Desktop/dojo/bootcamp/week6/weekendAssingment/app/plots.R")
 
 ui <- fluidPage(
-  
   navbarPage("Costa Rica Insights",
              tabPanel("Population",
                       fluidRow(
@@ -81,18 +80,18 @@ server <- function(input, output, session) {
   pop_plot <- plotPopulation(pop_table)
   
   nat_mort_table <- nat_mort()
-  nat_mort_plot <- plotPopulation(nat_mort_table)
+  nat_mort_plot <- plotNat_Mort(nat_mort_table)
     
   output$plot_population <- renderPlot({pop_plot}, res = 96)
   output$data_population <- renderTable({
     req(input$plot_click)
-    nearPoints(population(), input$plot_click)
+    nearPoints(pop_table, input$plot_click)
   })  
   
   output$plot_nat_mort <- renderPlot({nat_mort_plot}, res = 96)
   output$data_nat_mort <- renderTable({
     req(input$plot_click)
-    nearPoints(nat_mort(), input$plot_click)
+    nearPoints(nat_mort_table, input$plot_click)
   }) 
 }
 
