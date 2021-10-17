@@ -6,14 +6,12 @@ install.packages("scales")
 library(shiny)
 library(quantmod)
 library(scales)
+library(ggiraph)
 
 ## make sure getwd works ***************
 
 # Source helpers ----
 source("helpers.R")
-
-
-df_nat_mor <- nat_mort()
 
 # User interface
 ui <- fluidPage(
@@ -25,18 +23,19 @@ ui <- fluidPage(
 server <- function(input, output, session) {
   output$plot <- renderPlot({
     
-    ggplot(df_nat_mor) +
+    ggplot(population()) +
       geom_point(mapping = aes(x=year, y=points, color = dem_comp)) +
+      scale_y_continuous(labels = label_number(suffix = " M", scale = 1e-6)) +
       theme(axis.text.x = element_text(face="bold", color="#993333", 
-                                     size=10, angle=90),
-          axis.text.y = element_text(face="bold", color="#993333", 
-                                     size=10, angle=0))
+                                       size=10, angle=90),
+            axis.text.y = element_text(face="bold", color="#993333", 
+                                       size=10, angle=0))
     
   }, res = 96)
   
   output$data <- renderTable({
     req(input$plot_click)
-    nearPoints(df_nat_mor, input$plot_click)
+    nearPoints(population(), input$plot_click)
   })
 }
 

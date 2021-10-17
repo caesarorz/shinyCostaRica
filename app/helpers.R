@@ -9,90 +9,72 @@ library("readxl")
 library("tidyverse")
 require(dplyr)
 
-# path <- "C:/Users/50687/Desktop/dojo/bootcamp/week6/weekendAssingment/app"
-# setwd(path)
-
-## load files       path + /tables/name-of-your-file
-
-
-pop_pivot %>%
-  ggplot(.) +
-  geom_line(mapping = aes(x = year, y = points, color = dem_comp)) +
-  geom_point(mapping = aes(x=year, y=points,color = dem_comp))
-# 
-# 
-gg_point = ggplot(data = pop_pivot) +
-  geom_point_interactive(aes(x = year, y = points, color = dem_comp,
-                             tooltip = points, data_id = dem_comp)) +
-  #geom_line(aes(x=year, y=points, color=dem_comp)) +
-  scale_y_continuous(labels = unit_format(unit = "M", scale = 1e-6)) +
-  theme(axis.text.x = element_text(face="bold", color="black",
-                                   size=8, angle=90),
-        axis.text.y = element_text(face="bold", color="black",
-                                   size=10, angle=0))
-
-girafe(ggobj = gg_point)
-# 
-# 
-# library(ggiraph)
-# data <- mtcars
-# data$carname <- row.names(data)
-# 
-# gg_point = ggplot(data = data) +
-#   geom_point_interactive(aes(x = wt, y = qsec, color = disp,
-#                              tooltip = carname, data_id = carname)) + 
-#   scale_y_continuous(labels = unit_format(unit = "M", scale = 1e-6)) +
-#   theme_minimal()
-# 
-# girafe(ggobj = gg_point)
-
-
-
-
-
-
-
 ############################################   functions
 
-
-
-loadTable <- function(){
+loadTablePopulation <- function(){
+  ## load files 
   path <- "C:/Users/50687/Desktop/dojo/bootcamp/week6/weekendAssingment/app"
   setwd(path)
-  
-  ## load files       path + /tables/name-of-your-file
+  ##        path + /tables/name-of-your-file
   populationFile <- paste(path, "/tables/repoblacev_bid_web.xls", sep='') # pop table
   ## others
-  table <<- read_excel(populationFile, sheet="Cuadro 1")
-  return(table)
+  table_pop <- read_excel(populationFile, sheet="Cuadro 1")
+  return(table_pop)
+}
+
+loadTableGDP <- function(){
+  ## load files 
+  path <- "C:/Users/50687/Desktop/dojo/bootcamp/week6/weekendAssingment/app"
+  setwd(path)
+  ##        path + /tables/name-of-your-file
+  populationFile <- paste(path, "/tables/API_NY.GDP.MKTP.CD_DS2_en_excel_v2_3052509.xls", sep='') # pop table
+  ## others
+  table_gdp <- read_excel(populationFile, sheet="Data")
+  return(table_gdp)
 }
 
 
-## table generators
+cleanTable <- function(){
+  # table cleaning and fixing (general)
+  clean_table <- loadTablePopulation()
+  colnames(clean_table) <- clean_table %>% slice(4)
+  colnames(clean_table)[colnames(clean_table) == '2020a/'] <- '2020'
+  colnames(clean_table)[colnames(clean_table) == 'Componente demográfico'] <- 'dem_comp'
+  clean_table$'2020' <- as.double(as.character(clean_table$'2020'))
+  #sapply(clean_table, class) # check typeso 
+  return(clean_table)
+}
+
 population <- function(){
-  
-# population table cleaning
-  population <- loadTable()
-  colnames(population) <- population %>% slice(4)
-  colnames(population)[colnames(population) == '2020a/'] <- '2020'
-  colnames(population)[colnames(population) == 'Componente demográfico'] <- 'dem_comp'
-  population$'2020' <- as.double(as.character(population$'2020'))
-  #sapply(population, class) # check typeso 
-  
+  ## table generator population
+  df_population <- cleanTable()
   # population_clean <- population %>% slice(8:nrow(population))
-  population_clean <- population %>% slice(8:10)
+  df_population <- df_population %>% slice(8:10)
   
-  pop_pivot <- pivot_longer(population_clean, 
-                            2:ncol(population_clean), 
+  df_population <- pivot_longer(df_population, 
+                            2:ncol(df_population), 
                             names_to = "year", 
                             values_to = "points", values_drop_na = TRUE) %>%
     group_by(year)
 
-  return(pop_pivot)
+  return(df_population)
 }
 
-
-
+nat_mort <- function(){
+  ## table generator natality and mortality
+  nat_mort <- cleanTable()
+  nat_mort_clean <- nat_mort %>% slice(14:25) %>% slice(-c(2:9))
+  nat_mort_clean[nat_mort_clean == "General (por mil habitantes)"] <- "Mortalidad General (por mil habiltantes)"
+  nat_mort_clean[nat_mort_clean == "Hombres"] <- "Mortalidad General Hombres"
+  nat_mort_clean[nat_mort_clean == "Mujeres"] <- "Mortalidad General Mujeres"
+  nat_mort_pivot <- pivot_longer(nat_mort_clean, 
+                             2:ncol(nat_mort_clean), 
+                             names_to = "year", 
+                             values_to = "points", values_drop_na = TRUE) %>%
+     group_by(year)
+  
+  return(nat_mort_pivot)
+}
 
 
 
