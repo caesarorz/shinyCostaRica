@@ -42,6 +42,12 @@ cleanGDPTable <- function(){
   return(clean_table)
 }
 
+gdpWorld2020 <- function() {
+  table <- cleanGDPTable()
+  table <- table %>% select(`Country Name`, `2020`)
+  return(table)
+}
+
 
 gdpCostaRica <- function(){
   table <- cleanGDPTable()
