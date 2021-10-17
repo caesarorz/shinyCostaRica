@@ -13,26 +13,25 @@ require(dplyr)
 # setwd(path)
 
 ## load files       path + /tables/name-of-your-file
-# plotOutput("plot", click = "plot_click"),
-# tableOutput("data") 
+
+
+pop_pivot %>%
+  ggplot(.) +
+  geom_line(mapping = aes(x = year, y = points, color = dem_comp)) +
+  geom_point(mapping = aes(x=year, y=points,color = dem_comp))
 # 
-# pop_pivot %>%
-#   ggplot(.) +
-#   geom_line(mapping = aes(x = year, y = points, color = dem_comp)) +
-#   geom_point(mapping = aes(x=year, y=points,color = dem_comp))
 # 
-# 
-# gg_point = ggplot(data = pop_pivot) +
-#   geom_point_interactive(aes(x = year, y = points, color = dem_comp,
-#                              tooltip = points, data_id = dem_comp)) + 
-#   #geom_line(aes(x=year, y=points, color=dem_comp)) +
-#   scale_y_continuous(labels = unit_format(unit = "M", scale = 1e-6)) +
-#   theme(axis.text.x = element_text(face="bold", color="black", 
-#                                    size=8, angle=90),
-#         axis.text.y = element_text(face="bold", color="black", 
-#                                    size=10, angle=0))
-# 
-# girafe(ggobj = gg_point)
+gg_point = ggplot(data = pop_pivot) +
+  geom_point_interactive(aes(x = year, y = points, color = dem_comp,
+                             tooltip = points, data_id = dem_comp)) +
+  #geom_line(aes(x=year, y=points, color=dem_comp)) +
+  scale_y_continuous(labels = unit_format(unit = "M", scale = 1e-6)) +
+  theme(axis.text.x = element_text(face="bold", color="black",
+                                   size=8, angle=90),
+        axis.text.y = element_text(face="bold", color="black",
+                                   size=10, angle=0))
+
+girafe(ggobj = gg_point)
 # 
 # 
 # library(ggiraph)
@@ -48,17 +47,24 @@ require(dplyr)
 # girafe(ggobj = gg_point)
 
 
+
+
+
+
+
 ############################################   functions
 
-loadTables <- function(){
+
+
+loadTable <- function(){
   path <- "C:/Users/50687/Desktop/dojo/bootcamp/week6/weekendAssingment/app"
   setwd(path)
   
   ## load files       path + /tables/name-of-your-file
   populationFile <- paste(path, "/tables/repoblacev_bid_web.xls", sep='') # pop table
   ## others
-  populationTable <<- read_excel(populationFile, sheet="Cuadro 1")
-  return(populationTable)
+  table <<- read_excel(populationFile, sheet="Cuadro 1")
+  return(table)
 }
 
 
@@ -66,7 +72,7 @@ loadTables <- function(){
 population <- function(){
   
 # population table cleaning
-  population <- loadTables()
+  population <- loadTable()
   colnames(population) <- population %>% slice(4)
   colnames(population)[colnames(population) == '2020a/'] <- '2020'
   colnames(population)[colnames(population) == 'Componente demográfico'] <- 'dem_comp'
@@ -84,6 +90,8 @@ population <- function(){
 
   return(pop_pivot)
 }
+
+
 
 
 
