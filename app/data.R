@@ -6,12 +6,22 @@ library(ggplot2)
 library(markdown)
 
 source("C:/Users/50687/Desktop/dojo/bootcamp/week6/weekendAssingment/app/helpers.R")
-#source("C:/Users/50687/Desktop/dojo/bootcamp/week6/weekendAssingment/app/navbar.R")
+source("C:/Users/50687/Desktop/dojo/bootcamp/week6/weekendAssingment/app/plots.R")
 
 ui <- fluidPage(
   
-  navbarPage("Navbar!",
-             tabPanel("Plot",
+  navbarPage("Costa Rica Insights",
+             tabPanel("Population",
+                      fluidRow(
+                        column(9,
+                               plotOutput("plot_population", click = "plot_click")
+                        ),
+                        column(3,
+                               tableOutput("data_population")
+                        )
+                      )
+             ),
+             tabPanel("Mortality/Natality",
                         fluidRow(
                           column(9,
                                  plotOutput("plot_nat_mort", click = "plot_click")
@@ -21,16 +31,6 @@ ui <- fluidPage(
                           )
                         )
                       
-             ),
-             tabPanel("Summary",
-                      fluidRow(
-                        column(9,
-                               plotOutput("plot_population", click = "plot_click")
-                        ),
-                        column(3,
-                               tableOutput("data_population")
-                        )
-                      )
              ),
              navbarMenu("More",
                         tabPanel("Table",
@@ -74,37 +74,26 @@ ui <- fluidPage(
   # )
 )
 
-server <- function(input, output, session) {
-  output$plot_nat_mort <- renderPlot({
-    ggplot(nat_mort()) +
-      geom_point(mapping = aes(x=year, y=points, color = dem_comp)) +
-      theme(axis.text.x = element_text(face="bold", color="#993333", 
-                                       size=10, angle=90),
-            axis.text.y = element_text(face="bold", color="#993333", 
-                                       size=10, angle=0))
-  }, res = 96)
 
-  output$data_nat_mort <- renderTable({
-    req(input$plot_click)
-    nearPoints(nat_mort(), input$plot_click)
-  })  
+
+server <- function(input, output, session) {
+  pop_table <- population()
+  pop_plot <- plotPopulation(pop_table)
   
-  output$plot_population <- renderPlot({
-    ggplot(population()) +
-      geom_point(mapping = aes(x=year, y=points, color = dem_comp)) +
-      scale_y_continuous(labels = label_number(suffix = " M", scale = 1e-6)) +
-      theme(axis.text.x = element_text(face="bold", color="#993333", 
-                                       size=10, angle=90),
-            axis.text.y = element_text(face="bold", color="#993333", 
-                                       size=10, angle=0))
+  nat_mort_table <- nat_mort()
+  nat_mort_plot <- plotPopulation(nat_mort_table)
     
-  }, res = 96)
+  output$plot_population <- renderPlot({pop_plot}, res = 96)
   output$data_population <- renderTable({
     req(input$plot_click)
     nearPoints(population(), input$plot_click)
   })  
   
-
+  output$plot_nat_mort <- renderPlot({nat_mort_plot}, res = 96)
+  output$data_nat_mort <- renderTable({
+    req(input$plot_click)
+    nearPoints(nat_mort(), input$plot_click)
+  }) 
 }
 
 # Run the app
