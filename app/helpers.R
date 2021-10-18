@@ -42,13 +42,18 @@ cleanGDPTable <- function(){
   return(clean_table)
 }
 
+x <- 1054645656456.76567759879643247 
+format(round(x, 1))
+
+
 gdpWorld2020 <- function() {
   table <- cleanGDPTable()
   table <- table %>% select(`Country Name`, `2019`) %>%
-    rename(country_name = `Country Name`, gdp2019 = `2019`)
+    rename(country_name = `Country Name`, gdp2019 = `2019`) %>%
+    mutate(gdp2019 = round(gdp2019, 1)) %>%
+    mutate(country_name_gdp = paste0(country_name, " ", gdp2019))
   return(table)
 }
-
 
 gdpCostaRica <- function(){
   table <- cleanGDPTable()
@@ -60,7 +65,6 @@ gdpCostaRica <- function(){
     mutate(year=as.integer(year))
   return(table)
 }
-
 
 cleanTable <- function(){
   # table cleaning and fixing (general)

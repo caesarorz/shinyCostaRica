@@ -33,31 +33,18 @@ ui <- fluidPage(
              ),
              tabPanel("GDP", 
                         fluidRow(
-                          column(6,
+                          column(12,
                                  plotOutput("plot_gdp_cr")
                           ),
-                          column(6,
+                        ),
+                        fluidRow(
+                          column(12,
                                  ggiraphOutput("plot_gdp_world")
                           )
                         )
              )
   )
 )
-
-gdp_word <- gdpWorld2020()
-# 
-# gg_point = ggplot(gdp_word) +
-#   geom_point_interactive(aes(x = `Country Name`, y = `2020`)) + 
-#   theme_minimal()
-# 
-# 
-# 
-# ggplot(gdp_word) + 
-#   geom_point(mapping = aes(x = `Country Name`, y = `2020`))
-# 
-# 
-
-
 
 server <- function(input, output, session) {
   pop_table <- population()
@@ -70,7 +57,7 @@ server <- function(input, output, session) {
   gdpcr_plot <- plotGDPCostaRica(gdp_costarica)
     
   gdp_word <- gdpWorld2020()
-  
+  gg_gdp_world <- plotGDPWord(gdp_word)
   
   output$plot_population <- renderPlot({pop_plot}, res = 96)
   output$data_population <- renderTable({
@@ -86,25 +73,12 @@ server <- function(input, output, session) {
   
   output$plot_gdp_cr <- renderPlot({gdpcr_plot}, res = 96)
   
-  
-  
-  output$plot_gdp_word <- renderGirafe({
-    girafe(ggobj = gg_point )
-  })
-  
-  filterIris <- reactive({
-    filter(iris, Species == input$species)
-  })  
+  # filterIris <- reactive({
+  #   filter(iris, Species == input$species)
+  # })  
   
   output$plot_gdp_world <- renderggiraph({
-    gg_point = ggplot(gdp_word) +
-      scale_y_continuous(labels = label_number(suffix = " M", scale = 1e-6)) +
-      geom_point_interactive(aes(x = country_name, y = gdp2019,
-                                 tooltip = country_name, data_id = gdp2019)) +
-      
-      theme_minimal()
-    
-    girafe(ggobj = gg_point)
+    girafe(ggobj = gg_gdp_world, width_svg = 15, height_svg = 4)
   })
   
   
@@ -113,3 +87,4 @@ server <- function(input, output, session) {
 
 # Run the app
 shinyApp(ui, server)
+
