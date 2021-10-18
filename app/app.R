@@ -8,6 +8,9 @@ library(markdown)
 source("C:/Users/50687/Desktop/dojo/bootcamp/week6/weekendAssingment/app/helpers.R")
 source("C:/Users/50687/Desktop/dojo/bootcamp/week6/weekendAssingment/app/plots.R")
 
+# source("helpers.R")
+# source("plots.R")
+
 ui <- fluidPage(
   navbarPage("Costa Rica Insights",
              tabPanel("Population",

@@ -42,9 +42,6 @@ cleanGDPTable <- function(){
   return(clean_table)
 }
 
-x <- 1054645656456.76567759879643247 
-format(round(x, 1))
-
 
 gdpWorld2020 <- function() {
   table <- cleanGDPTable()
